@@ -1,12 +1,13 @@
-## Describir la gestión de costes en Azure
-
-
-## Describir las funciones y herramientas de Azure para la gobernanza y el cumplimiento normativo
+## Gestión de costes en Azure
 
 
 
-## Describir las características y herramientas para la gestión y despliegue de recursos Azure
+## Funciones y herramientas de Azure para la gobernanza y el cumplimiento normativo
 
 
 
-## Describir las herramientas de supervisión en Azure
+## Características y herramientas para la gestión y despliegue de recursos Azure
+
+
+
+## Herramientas de supervisión en Azure
