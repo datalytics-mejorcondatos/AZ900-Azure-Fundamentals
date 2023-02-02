@@ -21,7 +21,7 @@
 
 - ### Tipos de computación, máquinas virtuales y contenedores
 
-- ### Máquinas virtuales, recursos y conjutnos de disponibilidad
+- ### Máquinas virtuales, recursos y conjuntos de disponibilidad
 
 - ### Recursos para las máquinas virtuales
 
