@@ -39,10 +39,9 @@ Existen tres tipos de nubes:
 
 **Nube híbrida:** Una nube híbrida es una mezcla entre nube pública y nube privada, que consta en incrementar la nube privada a través de la implementación de recursos de nube pública con el fin de solventar problemas como la alta demanda temporal de algunos servicios. La nube híbrida se puede usar para proporcionar más seguridad. 
 
-También existen estas nubes
+También existen estas nubes:
 
 **Nubes múltiples:** Varias nubes tienen dos (o más) proveedores de nube pública y administra los recursos y la seguridad en ambos entornos. 
- 
 
 **Azure Arc:** Es un conjunto de tecnologías que ayudan a administrar el entorno en la nube, tanto si se trata de una nube pública, una nube privada en el centro de datos, una configuración híbrida o incluso un entorno de varias nubes que se ejecuta en varios proveedores de la nube a la vez. 
 
@@ -53,14 +52,13 @@ También existen estas nubes
 
 - ### Responsabilidad compartida
 
+**Proveedor de servicios en la nube:** El proveedor en este caso es quien presta los servicios de la nube, como por ejemplo Azure, AWS,Google Cloud, IBM Cloud, etc. 
+
+**Consumidor:** Los consumidores de servicios en la nube pueden ser empresas, individuos e incluso estudiantes.
+
+En el mundo del cómputo en la nube existen proveedores de servicios y consumidores que fueron explicados anteriormente, además de esto también hay distintos tipos de servicios y en cualquiera de estos tanto el proveedor como el consumidor tienen responsabilidades como las vemos en el siguiente cuadro:
+
 ![4](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/1.%20Descripci%C3%B3n%20de%20los%20conceptos%20de%20nube/Imagenes/4.png)
-
-
-#### Proveedor de servicios en la nube 
-El proveedor en este caso es quien presta los servicios de la nube, como por ejemplo Azure, AWS,Google Cloud, IBM Cloud, etc. 
-
-#### Consumidor  
-Los consumidores de servicios en la nube pueden ser empresas, individuos e incluso estudiantes.
 
 
 
@@ -77,10 +75,10 @@ Los consumidores de servicios en la nube pueden ser empresas, individuos e inclu
 
 ## 3. Tipos de servicios en nube
 
-- ### Infraestructura como servicio
+- ### Infraestructura como servicio (IaaS)
 
-- ### Software como servicio
+- ### Software como servicio (SaaS)
 
-- ### Plataforma como servicio
+- ### Plataforma como servicio (PaaS)
 
 - ### Usos de cada servicio
