@@ -66,9 +66,9 @@ En el ambiente On-Premise se hace uso de servidores y entorno físico de la empr
 
  | Usuario | Proveedor |
  |---|---|
- | La información y los datos almacenados en la nube. | are you? |
- | Los dispositivos que pueden conectarse a la nube (teléfonos móviles, equipos, etc.). | are you? |
- | Las cuentas e identidades de las personas, servicios y dispositivos de la organización. | are you? |
+ | La información y los datos almacenados en la nube. | El centro de datos físico. |
+ | Los dispositivos que pueden conectarse a la nube (teléfonos móviles, equipos, etc.). | La red física. |
+ | Las cuentas e identidades de las personas, servicios y dispositivos de la organización. | Los hosts físicos. |
 
 
 ## 2. Ventajas de utilizar servicios en nube
