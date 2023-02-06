@@ -1,4 +1,4 @@
-d # Conceptos de nube
+# Conceptos de nube
 
 
 ## 1. Computación en nube
