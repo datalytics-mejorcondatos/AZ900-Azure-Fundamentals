@@ -4,8 +4,15 @@
 ## 1. Componentes arquitectónicos de Azure
 
 - ### Regiones
+Una región es un área geográfica donde Azure, o en general un proveedor de servicios en la nube tiene al menos un centro de datos físico.
+
+
 
 - ### Zonas de disponibilidad
+
+
+
+https://infrastructuremap.microsoft.com/
 
 - ### Centros de datos
 
