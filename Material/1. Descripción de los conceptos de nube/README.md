@@ -47,9 +47,6 @@ También existen estas nubes:
 
 **Azure VMware Solution** 
 
-- ### Modelos de precios en la nube
-
-
 - ### Responsabilidad compartida
 
 **Proveedor de servicios en la nube:** El proveedor en este caso es quien presta los servicios de la nube, como por ejemplo Azure, AWS,Google Cloud, IBM Cloud, etc. 
@@ -60,9 +57,10 @@ En el mundo del cómputo en la nube existen proveedores de servicios y consumido
 
 ![4](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/1.%20Descripci%C3%B3n%20de%20los%20conceptos%20de%20nube/Imagenes/4.png)
 
-En el ambiente On-Premise se hace uso de servidores y entorno físico de la empresa, por esto en el cuadro vemos que todas las responsabilidades son de el consumidor en este caso la empresa. 
+En el ambiente **On-Premise** se hace uso de servidores y entorno físico de la empresa, por esto en el cuadro vemos que todas las responsabilidades son de el consumidor en este caso la empresa. 
 
-### Responsabilidades
+
+### Responsabilidades por servicio (IaaS, PaaS, SaaS)
 
  | Usuario | Proveedor |
  |---|---|
@@ -75,8 +73,6 @@ En el ambiente On-Premise se hace uso de servidores y entorno físico de la empr
 - Controles de red 
 - Aplicaciones
 - Identidad e infraestructura 
-
-https://infrastructuremap.microsoft.com/
 
 ## 2. Ventajas de utilizar servicios en nube
 
