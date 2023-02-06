@@ -4,19 +4,19 @@
 ## 1. Computación en nube
 
 - ### La nube
- ![1](https://github.com/natalydata13/proof/blob/main/1/imagenes/1.jpg)
+ ![1](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/1.%20Descripci%C3%B3n%20de%20los%20conceptos%20de%20nube/Imagenes/1.jpg)
 
 Cuando hablamos de la nube como un concepto computacional, la manera más fácil de entender es pensando en esta como el computador de otra persona en el que voy a ejecutar distintas tareas. La ejecución de estas tareas se facilita por medio de servicios que me presta la nube a través de la conexión a internet.  
 
 ¿Qué servicios me puede prestar? Espacio de almacenamientos, uso de CPUs en centros de datos, etc.
 
 ### Centro de datos 
-![2](https://github.com/natalydata13/proof/blob/main/1/imagenes/2.png)
+![2](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/1.%20Descripci%C3%B3n%20de%20los%20conceptos%20de%20nube/Imagenes/2.png)
 
 El centro de datos o datacenter es un término que de aquí en adelante será usado frecuentemente para referirse al espacio físico donde se encuentran los recursos necesarios de un proveedor de servicios tales como computadores, redes, sistemas de almacenamiento, etc. 
 
 - ### Modelo basado en el consumo
-![3](https://github.com/natalydata13/proof/blob/main/1/imagenes/3.png)
+![3](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/1.%20Descripci%C3%B3n%20de%20los%20conceptos%20de%20nube/Imagenes/3.jpg)
 
 Antes de hablar del modelo basado en el consumo, es importante aclarar dos conceptos los cuales son:
 
@@ -53,7 +53,7 @@ También existen estas nubes
 
 - ### Responsabilidad compartida
 
-![4](https://github.com/natalydata13/proof/blob/main/1/imagenes/4.png)
+![4](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/1.%20Descripci%C3%B3n%20de%20los%20conceptos%20de%20nube/Imagenes/4.png)
 
 
 #### Proveedor de servicios en la nube 
