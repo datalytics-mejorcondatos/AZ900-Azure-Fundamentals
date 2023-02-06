@@ -70,6 +70,13 @@ En el ambiente On-Premise se hace uso de servidores y entorno físico de la empr
  | Los dispositivos que pueden conectarse a la nube (teléfonos móviles, equipos, etc.). | La red física. |
  | Las cuentas e identidades de las personas, servicios y dispositivos de la organización. | Los hosts físicos. |
 
+**Modelo de servicio** Este determinará la responsabilidad de cosas como
+- Sistemas operativos 
+- Controles de red 
+- Aplicaciones
+- Identidad e infraestructura 
+
+https://infrastructuremap.microsoft.com/
 
 ## 2. Ventajas de utilizar servicios en nube
 
