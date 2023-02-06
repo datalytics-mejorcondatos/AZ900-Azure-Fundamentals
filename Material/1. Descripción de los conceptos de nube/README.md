@@ -15,6 +15,8 @@ Cuando hablamos de la nube como un concepto computacional, la manera más fácil
 
 El centro de datos o datacenter es un término que de aquí en adelante será usado frecuentemente para referirse al espacio físico donde se encuentran los recursos necesarios de un proveedor de servicios tales como computadores, redes, sistemas de almacenamiento, etc. 
 
+Para explorar el interior de un centro de datos, pueden ingresar a: https://infrastructuremap.microsoft.com/explore/datacenter
+
 - ### Modelo basado en el consumo
 ![3](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/1.%20Descripci%C3%B3n%20de%20los%20conceptos%20de%20nube/Imagenes/3.jpg)
 
