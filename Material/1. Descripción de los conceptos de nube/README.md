@@ -90,8 +90,9 @@ En el ambiente **On-Premise** se hace uso de servidores y entorno físico de la 
 
 - ### Infraestructura como servicio (IaaS)
 
+El proveedor, en este caso Azure se encarga de  mantener el hardware, la conectividad de red (a Internet) y la seguridad física del espacio en el cual presta los servicios.
 
-Azure solo se encarga de lo físico
+Por otro lado, el usuario tiene las siguientes responsabilidades:
 
  | Responsabilidades del usuario|
  |---|
@@ -103,8 +104,39 @@ Azure solo se encarga de lo físico
  |Controles de red|
 
 
-- ### Software como servicio (SaaS)
+Este tipo de servicio en la nube es muy **flexible** al usuario. 
 
 - ### Plataforma como servicio (PaaS)
 
+El proveedor, en este caso Azure asume la responsabilidad del mantenimiento del sistema operativo para el uso de los servicios que quiero adquirir.
+
+En cuanto a las responsabilidades tenemos:
+
+ | Usuario | Proveedor |
+ |---|---|
+ | Información y datos | Sistema operativo |
+ | Dispositivos (móviles y PCs) | Host y redes físicas |
+ | Cuentas e identidades | Centro de datos |
+ 
+
+
+- ### Software como servicio (SaaS)
+
+Este tipo de servicio es muy común entre los usuarios de internet ya que el correo electrónico, las aplicaciones financieras, las de mensajería, etc., hacen parte de todos estos softwares como servicio. 
+
+SaaS es el tipo de servicio más completo como producto, sin embargo, es el menos flexible.
+
+Aquí se le atribuyen la mayor cantidad de responsabilidades al proveedor:
+
+ | Responsabilidades del proveedor |
+ |---|
+ | Infraestructura de identidad y directorio |
+ | Aplicaciones |
+ | Controles de red |  
+ | Sistema operativo |
+ | Host físico |
+ | Red física |
+ | Centro de datos físico | 
+
+ 
 - ### Usos de cada servicio
