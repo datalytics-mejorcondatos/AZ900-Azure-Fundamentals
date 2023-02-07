@@ -86,6 +86,12 @@ En el ambiente **On-Premise** se hace uso de servidores y entorno físico de la 
 
 Existe algo llamado **Service Level Agreement (SLA)** que es el porcentaje de rendimiento que dice Azure, como proveedor de servicios de la nube que le brinda a los usuarios.  
 
+**Escalabilidad:** Es la capacidad de un recurso para ajustarse a la demanda. 
+
+**Escalabilidad horizontal:** Agrego más equipos de cómputo para solventar el salto o caída significativos en la demanda del recurso que se usa.
+**Escalabilidad vertical:** Mejoras el recurso de Azure aumentando el almacenamiento, la memoria, etc. con el fin de tener más potencia en el procesamiento.
+
+
 
 - ### Fiabilidad y previsibilidad en la nube
 
