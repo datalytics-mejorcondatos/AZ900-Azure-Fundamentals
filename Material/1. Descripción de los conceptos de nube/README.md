@@ -90,6 +90,19 @@ En el ambiente **On-Premise** se hace uso de servidores y entorno físico de la 
 
 - ### Infraestructura como servicio (IaaS)
 
+
+Azure solo se encarga de lo físico
+
+ | Responsabilidades del usuario|
+ |---|
+ |Información y datos|
+ |Dispositivos (móviles y PCs|
+ |Cuentas e identidades|
+ |Ifraestructura de identidad y directorio|
+ |Aplicaciones|
+ |Controles de red|
+
+
 - ### Software como servicio (SaaS)
 
 - ### Plataforma como servicio (PaaS)
