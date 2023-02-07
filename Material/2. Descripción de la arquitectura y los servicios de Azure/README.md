@@ -42,6 +42,10 @@ Una región se empareja con otra de la misma zona geográfica (debe estar a mín
 
 ![8](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/8.png)
 
+#### Características 
+* f
+* fd
+* d
 
 
 - ### Suscripciones
