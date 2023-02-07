@@ -80,6 +80,13 @@ En el ambiente **On-Premise** se hace uso de servidores y entorno físico de la 
 
 - ### Alta disponibilidad y escalabilidad en la nube
 
+
+**Alta disponibilidad:** Siempre van a haber servicios de nube habilitados independientemente de si ocurre un evento que ponga en peligro una región de Azure debido a que hay otra región que la respalda. 
+
+
+Existe algo llamado **Service Level Agreement (SLA)** que es el porcentaje de rendimiento que dice Azure, como proveedor de servicios de la nube que le brinda a los usuarios.  
+
+
 - ### Fiabilidad y previsibilidad en la nube
 
 - ### Seguridad y gobernanza en la nube
