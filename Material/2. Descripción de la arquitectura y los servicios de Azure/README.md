@@ -43,10 +43,10 @@ Una región se empareja con otra de la misma zona geográfica (debe estar a mín
 ![8](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/8.png)
 
 #### Características 
-* f
-* fd
-* d
-
+* Alta disponibilidad: Los servicios de nube están habilitados independientemente de si ocurre un evento que ponga en peligro una región de Azure. 
+* Tolerancia a fallos: Se aprende del error y sse trabaja sobre el mismo para la mejora. Siempre va a estar disponible la información.
+* Agilidad: La creación de distintas tareas es rápida dado que los recursos que se tienen ahí minimizan la complejidad.
+* *Elasticidad:* Un recurso se autoescala para cubrir las necesidades que se presenten. Esta característica se produce de forma automática. Para más información sobre esta defición, ingresar a https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/
 
 - ### Suscripciones
 
