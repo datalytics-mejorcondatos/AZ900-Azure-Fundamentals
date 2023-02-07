@@ -6,7 +6,7 @@
 - ### Regiones
 Una región es un área geográfica donde Azure, o en general un proveedor de servicios en la nube tiene al menos un centro de datos físico.
 
-[!6](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/6.png)
+![6](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/6.png)
 
 
 https://infrastructuremap.microsoft.com/
