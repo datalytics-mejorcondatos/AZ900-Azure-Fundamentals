@@ -67,7 +67,7 @@ Su tiempo de ejecución es de pocos segundos y es posible que yo pueda utilizar 
 
 ### Servicios de cómputo bajo demanda donde podemos encontrar por ejemplo los siguientes: 
 
-![a](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/a.jfif)
+![a](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/a.png)
 
 Los servicios del ejemplo son Infraestructuras como Servicios (IaaS) o Plataformas como Servicios (PaaS). 
 
@@ -108,12 +108,62 @@ A continuación presentaremos algunos ejemplos dentro de estos recursos:
 
 De nuevo, este es solo un ejemplo de este tipo de recursos pero se deja al lector inspeccionar los demás servicio de redes virtuales. 
 
+Configuración de acceso de red: https://learn.microsoft.com/es-mx/training/modules/describe-azure-compute-networking-services/9-exercise-configure-network-access
+ 
+ 
 - ### Puntos finales públicos y privados
 
 
 ## 3. Servicios de almacenamiento
 
 - ### Comparación de servicios de almacenamiento
+
+
+
+Los servicios de almacenamiento guardan objetos.
+
+| Servicios de almacenamiento |
+|---|
+| Blob Storage |
+| Data lake Storage Gen2 |
+| Azure Files |
+| Queue Storage |
+| table Storage |
+
+![c](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/c.png)
+ 
+
+1. Azure blob storage: https://azure.microsoft.com/en-us/products/storage/blobs/ 
+
+Un almacén de objetos que se puede escalar de forma masiva para datos de texto y binarios. No hay restricción en el tipo de datos que contiene.  
+Ventaja: no requiere que los desarrolladores piensen en discos o administren los discos ya que azure se encarga de las necesidades de almacenamiento físico. 
+En blob storage puedo hacer: 
+- Visualización de imágenes o documentos directamente en un explorador. 
+- Almacenamiento de archivos para acceso distribuido. 
+- Streaming de audio y vídeo. 
+- Almacenamiento de datos para copia de seguridad y restauración, recuperación ante desastres y archivado. 
+- Almacenamiento de datos para el análisis en local o en un servicio hospedado de Azure.  
+
+Niveles de acceso de almacenamiento de blobs: 
+ - Nivel de acceso frecuente: optimizado para almacenar datos a los que se accede con frecuencia (por ejemplo, imágenes para el sitio web). 
+ - Nivel de acceso esporádico: optimizado para datos a los que se accede con poca frecuencia y que se almacenan al menos durante 30 días (por ejemplo, las facturas de los clientes). 
+ - Nivel de acceso de archivo: conveniente para datos a los que raramente se accede y que se almacenan durante al menos 180 días con requisitos de latencia flexibles (por ejemplo, copias de seguridad a largo plazo). 
+
+2. Azure file storage: https://azure.microsoft.com/en-us/products/storage/files/ 
+Recursos compartidos de archivos administrados para implementaciones locales y en la nube.  
+¿Qué es un recurso compartido? 
+
+ 
+
+3. Azure disk storage: https://azure.microsoft.com/en-us/products/storage/disks/ 
+volúmenes de almacenamiento en el nivel de bloque para máquinas virtuales de Azure.  
+Conceptualmente, son iguales que un disco físico, pero están virtualizados, lo que ofrece mayor resistencia y disponibilidad que un disco físico. Con los discos administrados, lo único que debe hacer es aprovisionar el disco; Azure se encargará del resto.  
+
+4. Azure table storage: https://azure.microsoft.com/en-us/products/storage/tables/ 
+5. Azure queue storage: https://azure.microsoft.com/es-es/products/storage/queues/ 
+ Es un servicio de almacenamiento para  mensajería  
+6. Azure data lake: https://azure.microsoft.com/es-mx/products/data-lake-analytics/ 
+
 
 - ### Niveles de almacenamiento
 
