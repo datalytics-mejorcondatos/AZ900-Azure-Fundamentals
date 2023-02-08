@@ -100,7 +100,7 @@ Todos los servicios que ofrece Azure respecto a las redes virtuales son Infraest
 
 A continuación presentaremos algunos ejemplos dentro de estos recursos:
 
-![b](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/b.jpg)
+![b](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/b.png)
 
 *Azure virtual networks:* Permiten que los recursos de Azure se comuniquen entre sí.
 *Azure VPN Gateway:* Es una red privada virtual que mantiene la seguridad de la información almacenada en los recursos de Azure.
