@@ -46,7 +46,7 @@ Una región se empareja con otra de la misma zona geográfica (debe estar a mín
 * Alta disponibilidad: Los servicios de nube están habilitados independientemente de si ocurre un evento que ponga en peligro una región de Azure. 
 * Tolerancia a fallos: Se aprende del error y sse trabaja sobre el mismo para la mejora. Siempre va a estar disponible la información.
 * Agilidad: La creación de distintas tareas es rápida dado que los recursos que se tienen ahí minimizan la complejidad.
-* *Elasticidad:* Un recurso se autoescala para cubrir las necesidades que se presenten. Esta característica se produce de forma automática. Para más información sobre esta defición, ingresar a https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/
+* *[Elasticidad:](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/)* Un recurso se autoescala para cubrir las necesidades que se presenten. Esta característica se produce de forma automática. Para más información sobre esta defición, ingresar a https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/
 
 - ### Suscripciones
 
@@ -71,8 +71,7 @@ Su tiempo de ejecución es de pocos segundos y es posible que yo pueda utilizar 
 
 Los servicios del ejemplo son Infraestructuras como Servicios (IaaS) o Plataformas como Servicios (PaaS). 
 
-¿Cómo crear una máquina virtual?
-Para profundizar en la creación de estos recursos, en específico de las máquinas virtuales es indispensable hacer una lectura de la siguiente sección: https://learn.microsoft.com/es-mx/training/modules/describe-core-architectural-components-of-azure/7-exercise-create-azure-resource
+¿Cómo crear una [máquina virtual](https://learn.microsoft.com/es-mx/training/modules/describe-core-architectural-components-of-azure/7-exercise-create-azure-resource)?
 
 Lo principal que hay que saber es que Azure te pide cuatro cosas fundamentales en los recursos
 •	Suscripción: La cuenta en la que se va a cargar el costo.
@@ -108,7 +107,7 @@ A continuación presentaremos algunos ejemplos dentro de estos recursos:
 
 De nuevo, este es solo un ejemplo de este tipo de recursos pero se deja al lector inspeccionar los demás servicio de redes virtuales. 
 
-Configuración de acceso de red: https://learn.microsoft.com/es-mx/training/modules/describe-azure-compute-networking-services/9-exercise-configure-network-access
+Se recomienda realizar el ejercicio de [configuración de acceso de red](https://learn.microsoft.com/es-mx/training/modules/describe-azure-compute-networking-services/9-exercise-configure-network-access). 
  
  
 - ### Puntos finales públicos y privados
@@ -122,18 +121,10 @@ Configuración de acceso de red: https://learn.microsoft.com/es-mx/training/modu
 
 Los servicios de almacenamiento guardan objetos.
 
-| Servicios de almacenamiento |
-|---|
-| Blob Storage |
-| Data lake Storage Gen2 |
-| Azure Files |
-| Queue Storage |
-| table Storage |
-
 ![c](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/c.png)
  
 
-1. Azure blob storage: https://azure.microsoft.com/en-us/products/storage/blobs/ 
+1. **[Azure blob storage:](https://azure.microsoft.com/en-us/products/storage/blobs/)** 
 
 Un almacén de objetos que se puede escalar de forma masiva para datos de texto y binarios. No hay restricción en el tipo de datos que contiene.  
 Ventaja: no requiere que los desarrolladores piensen en discos o administren los discos ya que azure se encarga de las necesidades de almacenamiento físico. 
@@ -149,20 +140,18 @@ Niveles de acceso de almacenamiento de blobs:
  - Nivel de acceso esporádico: optimizado para datos a los que se accede con poca frecuencia y que se almacenan al menos durante 30 días (por ejemplo, las facturas de los clientes). 
  - Nivel de acceso de archivo: conveniente para datos a los que raramente se accede y que se almacenan durante al menos 180 días con requisitos de latencia flexibles (por ejemplo, copias de seguridad a largo plazo). 
 
-2. Azure file storage: https://azure.microsoft.com/en-us/products/storage/files/ 
+2. **[Azure file storage:](https://azure.microsoft.com/en-us/products/storage/files/)**
 Recursos compartidos de archivos administrados para implementaciones locales y en la nube.  
 ¿Qué es un recurso compartido? 
 
- 
-
-3. Azure disk storage: https://azure.microsoft.com/en-us/products/storage/disks/ 
+3. **[Azure disk storage:](https://azure.microsoft.com/en-us/products/storage/disks/)**
 volúmenes de almacenamiento en el nivel de bloque para máquinas virtuales de Azure.  
 Conceptualmente, son iguales que un disco físico, pero están virtualizados, lo que ofrece mayor resistencia y disponibilidad que un disco físico. Con los discos administrados, lo único que debe hacer es aprovisionar el disco; Azure se encargará del resto.  
 
-4. Azure table storage: https://azure.microsoft.com/en-us/products/storage/tables/ 
-5. Azure queue storage: https://azure.microsoft.com/es-es/products/storage/queues/ 
+4. **[Azure table storage:](https://azure.microsoft.com/en-us/products/storage/tables/)**
+5. **[Azure queue storage: (https://azure.microsoft.com/es-es/products/storage/queues/)**
  Es un servicio de almacenamiento para  mensajería  
-6. Azure data lake: https://azure.microsoft.com/es-mx/products/data-lake-analytics/ 
+6. **[Azure data lake:](https://azure.microsoft.com/es-mx/products/data-lake-analytics/)**
 
 
 - ### Niveles de almacenamiento
