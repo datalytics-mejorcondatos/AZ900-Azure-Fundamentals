@@ -46,8 +46,8 @@ Una región se empareja con otra de la misma zona geográfica (debe estar a mín
 * Alta disponibilidad: Los servicios de nube están habilitados independientemente de si ocurre un evento que ponga en peligro una región de Azure. 
 * Tolerancia a fallos: Se aprende del error y sse trabaja sobre el mismo para la mejora. Siempre va a estar disponible la información.
 * Agilidad: La creación de distintas tareas es rápida dado que los recursos que se tienen ahí minimizan la complejidad.
-* *[Elasticidad:](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/)* Un recurso se autoescala para cubrir las necesidades que se presenten. Esta característica se produce de forma automática. Para más información sobre esta defición, ingresar a https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/
-
+* *[Elasticidad:](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/)* Un recurso se autoescala para cubrir las necesidades que se presenten. Esta característica se produce de forma automática. 
+* 
 - ### Suscripciones
 
 - ### Grupos de gestión
@@ -144,14 +144,17 @@ Niveles de acceso de almacenamiento de blobs:
 Recursos compartidos de archivos administrados para implementaciones locales y en la nube.  
 ¿Qué es un recurso compartido? 
 
+
+
 3. **[Azure disk storage:](https://azure.microsoft.com/en-us/products/storage/disks/)**
 volúmenes de almacenamiento en el nivel de bloque para máquinas virtuales de Azure.  
-Conceptualmente, son iguales que un disco físico, pero están virtualizados, lo que ofrece mayor resistencia y disponibilidad que un disco físico. Con los discos administrados, lo único que debe hacer es aprovisionar el disco; Azure se encargará del resto.  
+Conceptualmente, son iguales que un disco físico, pero están virtualizados, lo que ofrece mayor resistencia y disponibilidad que un disco físico. Con los discos administrados, lo único que debe hacer es aprovisionar el disco; Azure se encargará del resto. 
 
 4. **[Azure table storage:](https://azure.microsoft.com/en-us/products/storage/tables/)**
-5. **[Azure queue storage: (https://azure.microsoft.com/es-es/products/storage/queues/)**
+5. **[Azure queue storage:](https://azure.microsoft.com/es-es/products/storage/queues/)**
  Es un servicio de almacenamiento para  mensajería  
 6. **[Azure data lake:](https://azure.microsoft.com/es-mx/products/data-lake-analytics/)**
+
 
 
 - ### Niveles de almacenamiento
