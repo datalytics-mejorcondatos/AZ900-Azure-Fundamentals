@@ -57,6 +57,14 @@ Una región se empareja con otra de la misma zona geográfica (debe estar a mín
 ## 2. Servicios informáticos y de red de Azure
 
 - ### Tipos de computación, máquinas virtuales y contenedores
+Servicios de cómputo bajo demanda donde podemos encontrar por ejemplo los siguientes: 
+
+![a](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/a.jfif)
+
+Los servicios del ejemplo son Infraestructuras como Servicios (IaaS). 
+
+![b](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/a.jfif)
+
 
 - ### Máquinas virtuales, recursos y conjuntos de disponibilidad
 
