@@ -114,7 +114,7 @@ Por otro lado, el usuario tiene las siguientes responsabilidades:
  | Responsabilidades del usuario|
  |---|
  |Información y datos|
- |Dispositivos (móviles y PCs|
+ |Dispositivos (móviles y PCs)|
  |Cuentas e identidades|
  |Ifraestructura de identidad y directorio|
  |Aplicaciones|
@@ -134,8 +134,6 @@ En cuanto a las responsabilidades tenemos:
  | Información y datos | Sistema operativo |
  | Dispositivos (móviles y PCs) | Host y redes físicas |
  | Cuentas e identidades | Centro de datos |
- 
-
 
 - ### [Software como servicio (SaaS)](https://learn.microsoft.com/es-mx/training/modules/describe-cloud-service-types/4-describe-software-service)
 
@@ -155,10 +153,9 @@ Aquí se le atribuyen la mayor cantidad de responsabilidades al proveedor:
  | Red física |
  | Centro de datos físico | 
 
- 
+
 - ### Clasificación de recursos por tipo de servicio
 
 Para empezar a trabajar con proveedores de servicio en la nube, es importante reconocer los recursos clasificados por tipo de servicio. Aquí un a breve clasificación: 
 
-![5](C:\Users\nataly.ramirez\AZ900-Azure-Fundamentals\Material\Imagenes\5.png)
-
+![5](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/5.png)
