@@ -103,6 +103,12 @@ La gobernanza le brinda mecanismos al usuario para poder mantener sus aplicacion
 
 En cuanto a la seguridad,existen soluciones para controlarla al máximo.
 
+La infraestructura como servicio le proporciona recursos físicos, pero le permite administrar los sistemas operativos y el software instalado, incluidas las revisiones y el mantenimiento  para tener un control máximo  
+
+Revisiones y mantenimiento automáticas:   
+- Plataforma como servicio PaaS 
+- Software como servicio  SaaS 
+
 ## 3. Tipos de servicios en nube
 
 - ### [Infraestructura como servicio (IaaS)](https://learn.microsoft.com/es-mx/training/modules/describe-cloud-service-types/2-describe-infrastructure-service)
