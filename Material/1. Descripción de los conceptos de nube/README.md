@@ -1,6 +1,5 @@
 # Conceptos de nube
 
-
 ## 1. Computación en nube
 
 - ### La nube
@@ -25,20 +24,19 @@ Antes de hablar del modelo basado en el consumo, es importante aclarar dos conce
 
 ***OPEX** (Gastos de operación):* Es el dinero invertido en servicios a lo largo en el tiempo para el funcionamiento de mi empresa, tal como el alquiler del espacio físico donde voy a tener el centro de datos, alquiler de un vehículo para transportar mis servidores al momento de hacer mantenimiento o adquirir un servicio en la nube. Se puede traducir en el pago de un servicio que me presta alguien más. 
 
-#### Ventajas del modelo basado en el consumo 
+#### Ventajas del modelo basado en el consumo
 1. No se paga por adelantado. 
 2. No es necesario comprar infraestructuras costosas que muy posiblemente no serán utilizadas en su totalidad.
 3. Se puede pagar para obtener más recursos cuando se necesiten y así mismo dejar de pagar cuando ya no se necesiten.
 
-- ### Modelos de nube y usos 
+- ### Modelos de nube y usos
 Existen tres tipos de nubes:
 
-**Nube pública:** Es una nube que un proveedor crea, controla y mantiene donde cualquier persona que quiera comprar servicios en la nube puede acceder a estos recursos y usarlos, ya sea una empresa o un individuo. Esta nube se ofrece desde una conexión de internet público.
+1. ***Nube pública:*** Es una nube que un proveedor crea, controla y mantiene donde cualquier persona que quiera comprar servicios en la nube puede acceder a estos recursos y usarlos, ya sea una empresa o un individuo. Esta nube se ofrece desde una conexión de internet público.
 
+2. ***Nube privada:*** Esta nube es propia de una empresa y proporciona un control mayor en los servicios que esta utiliza. Una nube privada se puede hospedar desde el centro de datos físico de la empresa. Tiene mayores costos. 
 
-**Nube privada:** Esta nube es propia de una empresa y proporciona un control mayor en los servicios que esta utiliza. Una nube privada se puede hospedar desde el centro de datos físico de la empresa. Tiene mayores costos. 
-
-**Nube híbrida:** Una nube híbrida es una mezcla entre nube pública y nube privada, que consta en incrementar la nube privada a través de la implementación de recursos de nube pública con el fin de solventar problemas como la alta demanda temporal de algunos servicios. La nube híbrida se puede usar para proporcionar más seguridad. 
+3. ***Nube híbrida:*** Una nube híbrida es una mezcla entre nube pública y nube privada, que consta en incrementar la nube privada a través de la implementación de recursos de nube pública con el fin de solventar problemas como la alta demanda temporal de algunos servicios. La nube híbrida se puede usar para proporcionar más seguridad. 
 
 También existen estas nubes:
 
@@ -46,7 +44,6 @@ También existen estas nubes:
 
 **Azure Arc:** Es un conjunto de tecnologías que ayudan a administrar el entorno en la nube, tanto si se trata de una nube pública, una nube privada en el centro de datos, una configuración híbrida o incluso un entorno de varias nubes que se ejecuta en varios proveedores de la nube a la vez. 
 
-**Azure VMware Solution** 
 
 - ### Responsabilidad compartida
 
@@ -79,7 +76,6 @@ En el ambiente **On-Premise** se hace uso de servidores y entorno físico de la 
 
 - ### Alta disponibilidad y escalabilidad en la nube
 
-
 **Alta disponibilidad:** Siempre van a haber servicios de nube habilitados independientemente de si ocurre un evento que ponga en peligro una región de Azure debido a que hay otra región que la respalda. 
 
 
@@ -90,13 +86,22 @@ Existe algo llamado **Service Level Agreement (SLA)** que es el porcentaje de re
 **Escalabilidad horizontal:** Agrego más equipos de cómputo para solventar el salto o caída significativos en la demanda del recurso que se usa.
 **Escalabilidad vertical:** Mejoras el recurso de Azure aumentando el almacenamiento, la memoria, etc. con el fin de tener más potencia en el procesamiento.
 
+- ### Confiabilidad y previsibilidad en la nube
 
 
-- ### Fiabilidad y previsibilidad en la nube
+***Confiabilidad:*** Se refiere a la capacidad que tiene un sistema de recuperarse de los errores o fallos y seguir funcionando. 
 
+***Previsibilidad:***  La previsibilidad se viene anclada de dos términos específicos:
+
+1. **Previsibilidad de rendimiento**: Se refiere a predecir los recursos necesarios que podría utilizar un cliente. 
+
+
+2.**Previsibilidad de costos:** Consta en pronosticar el costo del gasto en la nube. Se permite el seguimiento del uso de recursos en tiempo real, supervisar los recursos para asegurarse de que los usa de la manera más eficaz y aplicar análisis de datos para buscar patrones y tendencias que ayuden a planear mejor las implementaciones de recursos.
 - ### Seguridad y gobernanza en la nube
 
-- ### Gestionabilidad en la nube
+La gobernanza le brinda mecanismos al usuario para poder mantener sus aplicaciones y recursos controlados. 
+
+En cuanto a la seguridad,existen soluciones para controlarla al máximo.
 
 ## 3. Tipos de servicios en nube
 
@@ -153,6 +158,7 @@ Aquí se le atribuyen la mayor cantidad de responsabilidades al proveedor:
  
 - ### Clasificación de recursos por tipo de servicio
 
-| IaaS | PaaS | SaaS |
-|---|---|---|
-|||| 
+Para empezar a trabajar con proveedores de servicio en la nube, es importante reconocer los recursos clasificados por tipo de servicio. Aquí un a breve clasificación: 
+
+![5](C:\Users\nataly.ramirez\AZ900-Azure-Fundamentals\Material\Imagenes\5.png)
+
