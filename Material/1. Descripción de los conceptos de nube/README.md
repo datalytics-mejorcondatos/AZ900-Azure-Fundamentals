@@ -151,4 +151,8 @@ Aquí se le atribuyen la mayor cantidad de responsabilidades al proveedor:
  | Centro de datos físico | 
 
  
-- ### Usos de cada servicio
+- ### Clasificación de recursos por tipo de servicio
+
+| IaaS | PaaS | SaaS |
+|---|---|---|
+|||| 
