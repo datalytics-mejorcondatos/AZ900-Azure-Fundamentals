@@ -113,13 +113,15 @@ Se recomienda realizar el ejercicio de [configuración de acceso de red](https:/
  
 - ### Puntos finales públicos y privados
 
+Las redes virtuales de Azure admiten puntos de conexión públicos y privados para permitir la comunicación entre recursos externos o internos con otros recursos internos.
+
+- Los puntos de conexión públicos tienen una dirección IP pública y son accesibles desde cualquier parte del mundo.
+- Los puntos de conexión privados existen dentro de una red virtual y tienen una dirección IP privada en el espacio de direcciones de esa red virtual.
 
 ## 3. Servicios de almacenamiento
-
 - ### Comparación de servicios de almacenamiento
 
 Los servicios de almacenamiento guardan objetos.
-
 ![c](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/c.png)
  
 
@@ -143,7 +145,6 @@ Niveles de acceso de almacenamiento de blobs:
 Recursos compartidos de archivos administrados para implementaciones locales y en la nube.  
 ¿Qué es un recurso compartido? 
 
-
 3. **[Azure disk storage:](https://azure.microsoft.com/en-us/products/storage/disks/)**
 volúmenes de almacenamiento en el nivel de bloque para máquinas virtuales de Azure.  
 Conceptualmente, son iguales que un disco físico, pero están virtualizados, lo que ofrece mayor resistencia y disponibilidad que un disco físico. Con los discos administrados, lo único que debe hacer es aprovisionar el disco; Azure se encargará del resto. 
@@ -152,8 +153,6 @@ Conceptualmente, son iguales que un disco físico, pero están virtualizados, lo
 5. **[Azure queue storage:](https://azure.microsoft.com/es-es/products/storage/queues/)**
  Es un servicio de almacenamiento para  mensajería  
 6. **[Azure data lake:](https://azure.microsoft.com/es-mx/products/data-lake-analytics/)**
-
-
 
 - ### Niveles de almacenamiento
 
