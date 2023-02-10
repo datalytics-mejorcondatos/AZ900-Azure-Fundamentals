@@ -1,8 +1,5 @@
 # Arquitectura y servicios de Azure
-
-
 ## 1. Componentes arquitectónicos de Azure
-
 - ### Regiones
 Una región es un área geográfica donde Azure, o en general un proveedor de servicios en la nube tiene al menos un centro de datos físico.
 A continuación, los puntos azules son los centros de datos físicos con los que cuenta Azure al rededor del mundo.
@@ -31,8 +28,6 @@ Los servicios de Azure que admiten zonas de disponibilidad se dividen en tres ca
 * **Servicios no regionales:** los servicios siempre están disponibles en las ubicaciones geográficas de Azure y son resistentes a las interrupciones de toda la zona, así como a las de toda la región. 
 
 Incluso con la resistencia adicional que proporcionan las zonas de disponibilidad, es posible que un evento pueda ser tan grande que afecte a varias zonas de disponibilidad en una sola región. Para proporcionar una mayor resistencia, Azure tiene pares de regiones. 
-
-
 - ### Pares de regiones
 
 Una región se empareja con otra de la misma zona geográfica (debe estar a mínimo 500 km de distancia) para replicar recursos con el fin de respaldar la región y la información que maneja de eventos que puedan interrumpir el funcionamiento normal de la región y las zonas de disponibilidad.
@@ -49,10 +44,24 @@ Una región se empareja con otra de la misma zona geográfica (debe estar a mín
 * *[Elasticidad:](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/)* Un recurso se autoescala para cubrir las necesidades que se presenten. Esta característica se produce de forma automática. 
 * 
 - ### Suscripciones
+![9](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/9.png)
 
-- ### Grupos de gestión
+
+Las suscripciones en Azure funcionan para organizar los recursos y grupos de recursos con el fin de tener un control organizado de la facturación. Existen varias modalidades de suscripciones que implican tener una autenticación y autorización para el uso de recursos. 
+
+Una suscripción de Azure se vincula a una cuenta de Azure, que es una identidad en *Azure Active Directory (Azure AD)* o en un directorio en el que Azure AD confía.
+
+Una cuenta puede tener varias suscripciones.
+ Puede usar las suscripciones de Azure para definir límites en torno a los productos, servicios y recursos de Azure. Hay dos tipos de límites de suscripción que puede utilizar:
+
+1. **Límite de facturación:** Se tiene en cuenta el uso de los productos de Azure. Azure genera facturas e informes de facturación independientes para cada suscripción, de modo que pueda organizar y administrar los costos.
+
+2. **Límite de control de acceso:** Este modelo de facturación le permite administrar y controlar el acceso a los recursos que los usuarios aprovisionan con suscripciones específicas.
 
 - ### Jerarquías 
+La jerarquía es una forma flexible de organizar los recursos de acuerdo con el tipo de suscripción que hay entre los usuarios de una empresa que adquiere productos del cómputo en la nube. Un ejemplo es el siguiente diagrama:
+
+![10](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/10.png)
 
 ## 2. Servicios informáticos y de red de Azure
 
@@ -62,9 +71,7 @@ Una región se empareja con otra de la misma zona geográfica (debe estar a mín
 El contenedor se puede encender como una máquina virtual, sin embargo no cuenta con un sistema operativo completo sino solo con los elementos necesarios.
 Su tiempo de ejecución es de pocos segundos y es posible que yo pueda utilizar muchos contenedores en una máquina virtual. 
 
-**Máquinas virtuales:** 
-
-
+**Máquinas virtuales:** Este tipo de recursos le permiten a un usuario o empresa, implementar aplicaciones y programas informáticos en un sistema operativo virtualizado ya que la máquina virtual funciona como un computador en la nube.
 ### Servicios de cómputo bajo demanda donde podemos encontrar por ejemplo los siguientes: 
 
 ![a](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/a.png)
@@ -85,13 +92,7 @@ Lo principal que hay que saber es que Azure te pide cuatro cosas fundamentales e
 
 Existen una cantidad grande de recursos con distintas funcionalidades así que es recomendable hacer una exploración profunda a los recursos. De acuerdo a tu rol en la empresa, usarás diferentes recursos 
 
-
-
-- ### Máquinas virtuales, recursos y conjuntos de disponibilidad
-
 - ### Recursos para las máquinas virtuales
-
-- ### Alojamiento de aplicaciones
 
 - ### Redes virtuales
 
@@ -112,15 +113,15 @@ Se recomienda realizar el ejercicio de [configuración de acceso de red](https:/
  
 - ### Puntos finales públicos y privados
 
+Las redes virtuales de Azure admiten puntos de conexión públicos y privados para permitir la comunicación entre recursos externos o internos con otros recursos internos.
+
+- Los puntos de conexión públicos tienen una dirección IP pública y son accesibles desde cualquier parte del mundo.
+- Los puntos de conexión privados existen dentro de una red virtual y tienen una dirección IP privada en el espacio de direcciones de esa red virtual.
 
 ## 3. Servicios de almacenamiento
-
 - ### Comparación de servicios de almacenamiento
 
-
-
 Los servicios de almacenamiento guardan objetos.
-
 ![c](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/c.png)
  
 
@@ -144,8 +145,6 @@ Niveles de acceso de almacenamiento de blobs:
 Recursos compartidos de archivos administrados para implementaciones locales y en la nube.  
 ¿Qué es un recurso compartido? 
 
-
-
 3. **[Azure disk storage:](https://azure.microsoft.com/en-us/products/storage/disks/)**
 volúmenes de almacenamiento en el nivel de bloque para máquinas virtuales de Azure.  
 Conceptualmente, son iguales que un disco físico, pero están virtualizados, lo que ofrece mayor resistencia y disponibilidad que un disco físico. Con los discos administrados, lo único que debe hacer es aprovisionar el disco; Azure se encargará del resto. 
@@ -154,8 +153,6 @@ Conceptualmente, son iguales que un disco físico, pero están virtualizados, lo
 5. **[Azure queue storage:](https://azure.microsoft.com/es-es/products/storage/queues/)**
  Es un servicio de almacenamiento para  mensajería  
 6. **[Azure data lake:](https://azure.microsoft.com/es-mx/products/data-lake-analytics/)**
-
-
 
 - ### Niveles de almacenamiento
 
