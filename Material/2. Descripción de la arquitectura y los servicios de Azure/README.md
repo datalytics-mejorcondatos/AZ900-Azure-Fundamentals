@@ -218,8 +218,7 @@ El almacenamiento con redundancia geográfica (GRS) copia los datos tres veces e
 
 Los datos con una GZRS se almacenan en tres zonas de disponibilidad en la región primaria y luego se replican en una región geográfica secundaria para protegerlos de desastres regionales. 
 
-![e](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/e  .png)
-
+![e](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/e.png)
 - ### Cuenta de almacenamiento y tipos de almacenamiento
 
 ### Azure Storage y sus servicios
@@ -261,6 +260,11 @@ Es un servicio que migra datos desde el entorno local a la nube.
 
 - ### Servicios de directorio de Azure
 
+#### Azure Active Directory (Azure AD)
+
+#### Azure Active Directory Domain Services (Azure AD DS)
+
+
 - ### Métodos de autenticación
 
 - ### Identidades externas y acceso de invitados
@@ -270,6 +274,18 @@ Es un servicio que migra datos desde el entorno local a la nube.
 - ### Control de acceso
 
 - ### Confianza sero
+
+Es un modelo de seguridad que espera el peor de los escenarios posibles y de acuerdo con eso protege los recursos. Confianza cero presupone que hay una vulneración y comprueba todas las solicitudes como si provinieran de una red no controlada.
+
+En la actualidad, las organizaciones necesitan un modelo de seguridad nuevo que se adapte eficazmente a la complejidad del entorno moderno, adopte los recursos móviles y proteja a personas, dispositivos, aplicaciones y datos dondequiera que se encuentren.
+
+Para abordar este nuevo mundo informático, Microsoft recomienda encarecidamente el modelo de seguridad de Confianza cero, que se basa en estos principios rectores:
+
+Comprobar explícitamente: realice siempre las operaciones de autorización y autenticación en función de todos los puntos de datos disponibles.
+Usar el acceso de privilegios mínimos: limite el acceso de los usuarios con Just-in-Time y Just-Enough-Access (JIT/JEA), directivas que se adaptan al nivel de riesgo y protección de datos.
+Asumir que hay brechas: minimice el radio de expansión y el acceso a los segmentos. Comprobación del cifrado de un extremo a otro. Utilice el análisis para obtener visibilidad, impulsar la detección de amenazas y mejorar las defensas.
+
+
 
 - ### Modelo de defensa en profundidad
 
