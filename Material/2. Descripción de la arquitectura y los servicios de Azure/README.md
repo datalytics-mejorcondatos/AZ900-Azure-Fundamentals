@@ -23,9 +23,9 @@ Las zonas de disponibilidad son principalmente para las máquinas virtuales, los
 
 Los servicios de Azure que admiten zonas de disponibilidad se dividen en tres categorías: 
 
-* **Servicios de zona:** ancle el recurso a una zona específica (por ejemplo, máquinas virtuales, discos administrados, direcciones IP). 
-* **Servicios de redundancia de zona:** la plataforma se replica automáticamente entre zonas (por ejemplo, almacenamiento con redundancia de zona, SQL Database). 
-* **Servicios no regionales:** los servicios siempre están disponibles en las ubicaciones geográficas de Azure y son resistentes a las interrupciones de toda la zona, así como a las de toda la región. 
+    - **Servicios de zona:** ancle el recurso a una zona específica (por ejemplo, máquinas virtuales, discos administrados, direcciones IP). 
+    - **Servicios de redundancia de zona:** la plataforma se replica automáticamente entre zonas (por ejemplo, almacenamiento con redundancia de zona, SQL Database). 
+    - **Servicios no regionales:** los servicios siempre están disponibles en las ubicaciones geográficas de Azure y son resistentes a las interrupciones de toda la zona, así como a las de toda la región. 
 
 Incluso con la resistencia adicional que proporcionan las zonas de disponibilidad, es posible que un evento pueda ser tan grande que afecte a varias zonas de disponibilidad en una sola región. Para proporcionar una mayor resistencia, Azure tiene pares de regiones. 
 - ### Pares de regiones
@@ -38,11 +38,11 @@ Una región se empareja con otra de la misma zona geográfica (debe estar a mín
 ![8](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/8.png)
 
 #### Características 
-* Alta disponibilidad: Los servicios de nube están habilitados independientemente de si ocurre un evento que ponga en peligro una región de Azure. 
-* Tolerancia a fallos: Se aprende del error y sse trabaja sobre el mismo para la mejora. Siempre va a estar disponible la información.
-* Agilidad: La creación de distintas tareas es rápida dado que los recursos que se tienen ahí minimizan la complejidad.
-* *[Elasticidad:](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/)* Un recurso se autoescala para cubrir las necesidades que se presenten. Esta característica se produce de forma automática. 
-* 
+    * Alta disponibilidad: Los servicios de nube están habilitados independientemente de si ocurre un evento que ponga en peligro una región de Azure. 
+    * Tolerancia a fallos: Se aprende del error y sse trabaja sobre el mismo para la mejora. Siempre va a estar disponible la información.
+    * Agilidad: La creación de distintas tareas es rápida dado que los recursos que se tienen ahí minimizan la complejidad.
+    * *[Elasticidad:](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/)* Un recurso se autoescala para cubrir las necesidades que se presenten. Esta característica se produce de forma automática. 
+
 - ### Suscripciones
 ![9](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/9.png)
 
@@ -54,9 +54,9 @@ Una suscripción de Azure se vincula a una cuenta de Azure, que es una identidad
 Una cuenta puede tener varias suscripciones.
  Puede usar las suscripciones de Azure para definir límites en torno a los productos, servicios y recursos de Azure. Hay dos tipos de límites de suscripción que puede utilizar:
 
-1. **Límite de facturación:** Se tiene en cuenta el uso de los productos de Azure. Azure genera facturas e informes de facturación independientes para cada suscripción, de modo que pueda organizar y administrar los costos.
+    1. **Límite de facturación:** Se tiene en cuenta el uso de los productos de Azure. Azure genera facturas e informes de facturación independientes para cada suscripción, de modo que pueda organizar y administrar los costos.
 
-2. **Límite de control de acceso:** Este modelo de facturación le permite administrar y controlar el acceso a los recursos que los usuarios aprovisionan con suscripciones específicas.
+    2. **Límite de control de acceso:** Este modelo de facturación le permite administrar y controlar el acceso a los recursos que los usuarios aprovisionan con suscripciones específicas.
 
 - ### Jerarquías 
 La jerarquía es una forma flexible de organizar los recursos de acuerdo con el tipo de suscripción que hay entre los usuarios de una empresa que adquiere productos del cómputo en la nube. Un ejemplo es el siguiente diagrama:
@@ -80,20 +80,18 @@ Los servicios del ejemplo son Infraestructuras como Servicios (IaaS) o Plataform
 
 ¿Cómo crear una [máquina virtual](https://learn.microsoft.com/es-mx/training/modules/describe-core-architectural-components-of-azure/7-exercise-create-azure-resource)?
 
-Lo principal que hay que saber es que Azure te pide cuatro cosas fundamentales en los recursos
-•	Suscripción: La cuenta en la que se va a cargar el costo.
-•	Grupo de recursos: Es una carpeta en la cual está el recurso que quieres usar, en esta carpeta puede haber muchos recursos, sin embargo, ningún recurso se puede repetir en otros grupos de recursos.
-•	Nombre: Nombre para el recurso, en este caso un nombre para la máquina virtual 
-•	Región: Área geográfica donde quieres que esté el recurso.
+Lo principal que hay que saber es que Azure te pide cuatro cosas fundamentales en los recursos:
+
+       - Suscripción: La cuenta en la que se va a cargar el costo.
+        - Grupo de recursos: Es una carpeta en la cual está el recurso que quieres usar, en esta carpeta puede haber muchos recursos, sin embargo, ningún recurso se puede repetir en otros grupos de recursos.
+        - Nombre: Nombre para el recurso, en este caso un nombre para la máquina virtual 
+        - Región: Área geográfica donde quieres que esté el recurso.
 
 
-*Azure virtual Machines Scale sets:* Agrupa las máquinas virtuales para aumentarles el almacenamiento, la memoria para mejorar el rendimiento.
-*Azure Batch:* Sirve para ejecutar tareas que necesitan un alto rendimiento como por ejemplo simulaciones, procesamiento de videos, transformación de datos, etc.
+        - *Azure virtual Machines Scale sets:* Agrupa las máquinas virtuales para aumentarles el almacenamiento, la memoria para mejorar el rendimiento.
+        - *Azure Batch:* Sirve para ejecutar tareas que necesitan un alto rendimiento como por ejemplo simulaciones, procesamiento de videos, transformación de datos, etc.
 
-Existen una cantidad grande de recursos con distintas funcionalidades así que es recomendable hacer una exploración profunda a los recursos. De acuerdo a tu rol en la empresa, usarás diferentes recursos 
-
-- ### Recursos para las máquinas virtuales
-
+Existen una cantidad grande de recursos con distintas funcionalidades así que es recomendable hacer una exploración profunda a los recursos. De acuerdo a tu rol en la empresa, usarás diferentes recursos.
 - ### Redes virtuales
 
 Todos los servicios que ofrece Azure respecto a las redes virtuales son Infraestructuras como Servicio. 
@@ -102,9 +100,9 @@ A continuación presentaremos algunos ejemplos dentro de estos recursos:
 
 ![b](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/b.png)
 
-*Azure virtual networks:* Permiten que los recursos de Azure se comuniquen entre sí.
-*Azure VPN Gateway:* Es una red privada virtual que mantiene la seguridad de la información almacenada en los recursos de Azure.
-*Azure Application* Distribuye equitativamente las cargas de ejecución al asignar tareas.  
+        - *Azure virtual networks:* Permiten que los recursos de Azure se comuniquen entre sí.
+        - *Azure VPN Gateway:* Es una red privada virtual que mantiene la seguridad de la información almacenada en los recursos de Azure.
+        - *Azure Application* Distribuye equitativamente las cargas de ejecución al asignar tareas.  
 
 De nuevo, este es solo un ejemplo de este tipo de recursos pero se deja al lector inspeccionar los demás servicio de redes virtuales. 
 
@@ -122,6 +120,7 @@ Las redes virtuales de Azure admiten puntos de conexión públicos y privados pa
 - ### Comparación de servicios de almacenamiento
 
 Los servicios de almacenamiento guardan objetos.
+
 ![c](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/c.png)
  
 
@@ -157,8 +156,58 @@ Conceptualmente, son iguales que un disco físico, pero están virtualizados, lo
 - ### Niveles de almacenamiento
 
 - ### Opciones de redundancia
+#### Describir la redundancia de almacenamiento de Azure 
+
+La redundancia garantiza que la cuenta de almacenamiento cumple sus objetivos de disponibilidad  y durabilidad, aunque se produzcan errores. 
+ 
+
+Factores a tener en cuenta para elegir la opción de redundancia más adecuada:  
+
+    - Bajo costo 
+    - Disponibilidad 
+            - Cómo se replican los datos en la región primaria. 
+            - Si los datos se replican en una segunda ubicación que está alejada geográficamente de la región primaria, para protegerse frente a desastres regionales. 
+            - Si la aplicación necesita acceso de lectura a los datos replicados en la región secundaria en caso de que la región primaria deje de estar disponible. 
+
+#### Redundancia en la región primaria 
+Los datos se replican tres veces en la región primaria. 
+
+Opciones para replicar datos en esta región son:  
+
+1. **Almacenamiento con redundancia local (LRS):** Replica los datos tres veces dentro de un único centro de datos en la región primaria. LRS ofrece una durabilidad mínima de 11 nueves (99,999999999 %) de los objetos en un año determinado.  
+        - Bajo costo 
+        - Menor durabilidad 
+        - Si se produce un desastre como un incendio o una inundación en el centro de datos, es posible que todas las réplicas de una cuenta de almacenamiento con LRS *se pierdan o no se puedan recuperar.*  
+
+2. **Almacenamiento con redundancia de zona (ZRS):**  Para las regiones con zona de disponibilidad habilitada, el almacenamiento con redundancia de zona (ZRS) replica los datos de Azure Storage sincrónicamente en tres zonas de disponibilidad de Azure en la región primaria. ZRS proporciona a los objetos de datos de Azure Storage una durabilidad de al menos 12 nueves (99,9999999999 %) durante un año determinado.  
+
+        - Si una zona no está disponible, Azure hace actualizaciones de red. 
+        - Uso para escenarios con alta disponibilidad. 
+        - ZRS para restringir la replicación de datos de acuerdo a requisitos de gobernanza de datos. 
+
+#### Redundancia en la región secundaria
+
+    1. **Almacenamiento con redundancia geográfica (GRS):** Ejecuto un almacenamiento con redundancia local en dos regiones distintas. Región 1 y Región 2. 
+
+    2. **Almacenamiento con redundancia de zona geográfica (GZRS):** Ejecuto redundancia de zona en la región primaria y redundancia de zona local en la región secundaria. 
+
+#### Almacenamiento con redundancia geográfica (GRS)
+
+![d](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/d.png)
+
+El almacenamiento con redundancia geográfica (GRS) copia los datos tres veces en una ubicación física de la región primaria a través de almacenamiento con redundancia local y luego copia los datos a una región secundaria por el mismo tipo de almacenamiento.  
+
+#### Almacenamiento con redundancia de zona geográfica (GZRS)
+
+Los datos con una GZRS se almacenan en tres zonas de disponibilidad en la región primaria y luego se replican en una región geográfica secundaria para protegerlos de desastres regionales. 
+
+![e](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/e  .png)
 
 - ### Cuenta de almacenamiento y tipos de almacenamiento
+
+### Azure Storage y sus servicios
+
+
 
 - ### Movimientos de archivos
 
