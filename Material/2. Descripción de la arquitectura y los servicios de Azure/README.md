@@ -23,9 +23,9 @@ Las zonas de disponibilidad son principalmente para las máquinas virtuales, los
 
 Los servicios de Azure que admiten zonas de disponibilidad se dividen en tres categorías: 
 
-    - **Servicios de zona:** ancle el recurso a una zona específica (por ejemplo, máquinas virtuales, discos administrados, direcciones IP). 
-    - **Servicios de redundancia de zona:** la plataforma se replica automáticamente entre zonas (por ejemplo, almacenamiento con redundancia de zona, SQL Database). 
-    - **Servicios no regionales:** los servicios siempre están disponibles en las ubicaciones geográficas de Azure y son resistentes a las interrupciones de toda la zona, así como a las de toda la región. 
+- **Servicios de zona:** ancle el recurso a una zona específica (por ejemplo, máquinas virtuales, discos administrados, direcciones IP). 
+- **Servicios de redundancia de zona:** la plataforma se replica automáticamente entre zonas (por ejemplo, almacenamiento con redundancia de zona, SQL Database). 
+- **Servicios no regionales:** los servicios siempre están disponibles en las ubicaciones geográficas de Azure y son resistentes a las interrupciones de toda la zona, así como a las de toda la región. 
 
 Incluso con la resistencia adicional que proporcionan las zonas de disponibilidad, es posible que un evento pueda ser tan grande que afecte a varias zonas de disponibilidad en una sola región. Para proporcionar una mayor resistencia, Azure tiene pares de regiones. 
 - ### Pares de regiones
@@ -38,10 +38,10 @@ Una región se empareja con otra de la misma zona geográfica (debe estar a mín
 ![8](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/8.png)
 
 #### Características 
-    * Alta disponibilidad: Los servicios de nube están habilitados independientemente de si ocurre un evento que ponga en peligro una región de Azure. 
-    * Tolerancia a fallos: Se aprende del error y sse trabaja sobre el mismo para la mejora. Siempre va a estar disponible la información.
-    * Agilidad: La creación de distintas tareas es rápida dado que los recursos que se tienen ahí minimizan la complejidad.
-    * *[Elasticidad:](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/)* Un recurso se autoescala para cubrir las necesidades que se presenten. Esta característica se produce de forma automática. 
+* **Alta disponibilidad:** Los servicios de nube están habilitados independientemente de si ocurre un evento que ponga en peligro una región de Azure. 
+* **Tolerancia a fallos:** Se aprende del error y sse trabaja sobre el mismo para la mejora. Siempre va a estar disponible la información.
+* **Agilidad:** La creación de distintas tareas es rápida dado que los recursos que se tienen ahí minimizan la complejidad.
+* *[Elasticidad:](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/)* Un recurso se autoescala para cubrir las necesidades que se presenten. Esta característica se produce de forma automática. 
 
 - ### Suscripciones
 ![9](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/9.png)
@@ -54,9 +54,9 @@ Una suscripción de Azure se vincula a una cuenta de Azure, que es una identidad
 Una cuenta puede tener varias suscripciones.
  Puede usar las suscripciones de Azure para definir límites en torno a los productos, servicios y recursos de Azure. Hay dos tipos de límites de suscripción que puede utilizar:
 
-    1. **Límite de facturación:** Se tiene en cuenta el uso de los productos de Azure. Azure genera facturas e informes de facturación independientes para cada suscripción, de modo que pueda organizar y administrar los costos.
+1. **Límite de facturación:** Se tiene en cuenta el uso de los productos de Azure. Azure genera facturas e informes de facturación independientes para cada suscripción, de modo que pueda organizar y administrar los costos.
 
-    2. **Límite de control de acceso:** Este modelo de facturación le permite administrar y controlar el acceso a los recursos que los usuarios aprovisionan con suscripciones específicas.
+2. **Límite de control de acceso:** Este modelo de facturación le permite administrar y controlar el acceso a los recursos que los usuarios aprovisionan con suscripciones específicas.
 
 - ### Jerarquías 
 La jerarquía es una forma flexible de organizar los recursos de acuerdo con el tipo de suscripción que hay entre los usuarios de una empresa que adquiere productos del cómputo en la nube. Un ejemplo es el siguiente diagrama:
@@ -82,14 +82,13 @@ Los servicios del ejemplo son Infraestructuras como Servicios (IaaS) o Plataform
 
 Lo principal que hay que saber es que Azure te pide cuatro cosas fundamentales en los recursos:
 
-       - Suscripción: La cuenta en la que se va a cargar el costo.
-        - Grupo de recursos: Es una carpeta en la cual está el recurso que quieres usar, en esta carpeta puede haber muchos recursos, sin embargo, ningún recurso se puede repetir en otros grupos de recursos.
-        - Nombre: Nombre para el recurso, en este caso un nombre para la máquina virtual 
-        - Región: Área geográfica donde quieres que esté el recurso.
+        1. Suscripción: La cuenta en la que se va a cargar el costo.
+        2. Grupo de recursos: Es una carpeta en la cual está el recurso que quieres usar, en esta carpeta puede haber muchos recursos, sin embargo, ningún recurso se puede repetir en otros grupos de recursos.
+        3. Nombre: Nombre para el recurso, en este caso un nombre para la máquina virtual 
+        4. Región: Área geográfica donde quieres que esté el recurso.
 
-
-        - *Azure virtual Machines Scale sets:* Agrupa las máquinas virtuales para aumentarles el almacenamiento, la memoria para mejorar el rendimiento.
-        - *Azure Batch:* Sirve para ejecutar tareas que necesitan un alto rendimiento como por ejemplo simulaciones, procesamiento de videos, transformación de datos, etc.
+        - Azure virtual Machines Scale sets: Agrupa las máquinas virtuales para aumentarles el almacenamiento, la memoria para mejorar el rendimiento.
+        - Azure Batch: Sirve para ejecutar tareas que necesitan un alto rendimiento como por ejemplo simulaciones, procesamiento de videos, transformación de datos, etc.
 
 Existen una cantidad grande de recursos con distintas funcionalidades así que es recomendable hacer una exploración profunda a los recursos. De acuerdo a tu rol en la empresa, usarás diferentes recursos.
 - ### Redes virtuales
@@ -100,9 +99,9 @@ A continuación presentaremos algunos ejemplos dentro de estos recursos:
 
 ![b](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/b.png)
 
-        - *Azure virtual networks:* Permiten que los recursos de Azure se comuniquen entre sí.
-        - *Azure VPN Gateway:* Es una red privada virtual que mantiene la seguridad de la información almacenada en los recursos de Azure.
-        - *Azure Application* Distribuye equitativamente las cargas de ejecución al asignar tareas.  
+- *Azure virtual networks:* Permiten que los recursos de Azure se comuniquen entre sí.
+- *Azure VPN Gateway:* Es una red privada virtual que mantiene la seguridad de la información almacenada en los recursos de Azure.
+- *Azure Application* Distribuye equitativamente las cargas de ejecución al asignar tareas.  
 
 De nuevo, este es solo un ejemplo de este tipo de recursos pero se deja al lector inspeccionar los demás servicio de redes virtuales. 
 
@@ -187,9 +186,9 @@ Opciones para replicar datos en esta región son:
 
 #### Redundancia en la región secundaria
 
-    1. **Almacenamiento con redundancia geográfica (GRS):** Ejecuto un almacenamiento con redundancia local en dos regiones distintas. Región 1 y Región 2. 
+1. **Almacenamiento con redundancia geográfica (GRS):** Ejecuto un almacenamiento con redundancia local en dos regiones distintas. Región 1 y Región 2. 
 
-    2. **Almacenamiento con redundancia de zona geográfica (GZRS):** Ejecuto redundancia de zona en la región primaria y redundancia de zona local en la región secundaria. 
+2. **Almacenamiento con redundancia de zona geográfica (GZRS):** Ejecuto redundancia de zona en la región primaria y redundancia de zona local en la región secundaria. 
 
 #### Almacenamiento con redundancia geográfica (GRS)
 
@@ -227,25 +226,20 @@ Los datos con una GZRS se almacenan en tres zonas de disponibilidad en la regió
 
 Es un servicio que migra datos desde el entorno local a la nube. 
 
-        - **Plataforma de migración unificada:** un único portal para iniciar, ejecutar y realizar un seguimiento de la migración a Azure. 
+        - Plataforma de migración unificada:Un único portal para iniciar, ejecutar y realizar un seguimiento de la migración a Azure. 
 
-        - **Rango de herramientas:** Rango de herramientas para la evaluación y migración Las herramientas de Azure Migrate incluyen Azure Migrate: Discovery y assessment y Azure Migrate: Server Migration. Azure Migrate también se integra con otros servicios y herramientas de Azure, así como con ofertas de proveedores de software independientes (ISV). 
-        - **Assessment and migration (Evaluación y migración):** en el centro de Azure Migrate, puede evaluar y migrar la infraestructura local a Azure. 
+        - Rango de herramientas: Rango de herramientas para la evaluación y migración Las herramientas de Azure Migrate incluyen Azure Migrate: Discovery y assessment y Azure Migrate: Server Migration. Azure Migrate también se integra con otros servicios y herramientas de Azure, así como con ofertas de proveedores de software independientes (ISV). 
+
+        - Assessment and migration (Evaluación y migración): en el centro de Azure Migrate, puede evaluar y migrar la infraestructura local a Azure. 
 
 
 ### HERRAMIENTAS PARA LA MIGRACIÓN DE DATOS: 
 
-    - **Azure Migrate:** Discovery and assessment (Azure Migrate: detección y evaluación). Detecte y evalúe servidores locales que se ejecutan en VMware, Hyper-V y servidores físicos para preparar la migración a Azure. 
+- **Azure Migrate:** Discovery and assessment (Azure Migrate: detección y evaluación). Detecte y evalúe servidores locales que se ejecutan en VMware, Hyper-V y servidores físicos para preparar la migración a Azure. 
 
-    - **Azure Migrate:** Server Migration (Azure Migrate: migración del servidor). Migre máquinas virtuales de VMware, máquinas virtuales de Hyper-V, servidores físicos, otros servidores virtualizados y máquinas virtuales de la nube pública a Azure. 
+- **Web app migration assistant (Asistente de migración de aplicación web).** Azure App Service Migration Assistant es una herramienta independiente para evaluar sitios web locales para la migración a Azure App Service. Use Migration Assistant para migrar aplicaciones web de .NET y PHP a Azure. 
 
-    - **Data Migration Assistant.** Data Migration Assistant es una herramienta independiente para evaluar servidores de SQL Server. Ayuda a identificar posibles problemas que bloquean la migración. Identifica características no admitidas, nuevas características que puede aprovechar después de la migración y la ruta de acceso correcta para la migración de la base de datos. 
-
-    - **Azure Database Migration Service.** Migre bases de datos locales a máquinas virtuales de Azure en las que se ejecutan SQL Server, Azure SQL Database o instancias administradas de SQL. 
-
-    - **Web app migration assistant (Asistente de migración de aplicación web).** Azure App Service Migration Assistant es una herramienta independiente para evaluar sitios web locales para la migración a Azure App Service. Use Migration Assistant para migrar aplicaciones web de .NET y PHP a Azure. 
-
-    - **Azure Data Box.** Use los productos de Azure Data Box para trasladar grandes cantidades de datos sin conexión a Azure. 
+- **Azure Data Box.** Use los productos de Azure Data Box para trasladar grandes cantidades de datos sin conexión a Azure. 
 
 ## 4. Identidad, acceso y seguridad de Azure
 
