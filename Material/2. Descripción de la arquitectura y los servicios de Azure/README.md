@@ -140,19 +140,37 @@ Niveles de acceso de almacenamiento de blobs:
  - Nivel de acceso de archivo: conveniente para datos a los que raramente se accede y que se almacenan durante al menos 180 días con requisitos de latencia flexibles (por ejemplo, copias de seguridad a largo plazo). 
 
 2. **[Azure file storage:](https://azure.microsoft.com/en-us/products/storage/files/)**
-Recursos compartidos de archivos administrados para implementaciones locales y en la nube.  
-¿Qué es un recurso compartido? 
+Recursos compartidos de archivos administrados mediante implementaciones locales y en la nube.  
+**[¿Qué es un recurso compartido?](https://learn.microsoft.com/es-es/azure/architecture/hybrid/azure-file-share)**
+
+### Usos
+
+- Reemplazar o complementar servidores de archivos locales
+- Aplicaciones "Lift-and-shift": facilita la migración mediante "lift and shift" de aplicaciones a la nube que espera un recurso compartido de archivos para almacenar datos de la aplicación de archivos o de un usuario.
+- Simplifica el desarrollo en la nube
+- Los recursos compartidos de archivos de Azure se pueden usar como volúmenes persistentes para contenedores con estado.
 
 3. **[Azure disk storage:](https://azure.microsoft.com/en-us/products/storage/disks/)**
 volúmenes de almacenamiento en el nivel de bloque para máquinas virtuales de Azure.  
 Conceptualmente, son iguales que un disco físico, pero están virtualizados, lo que ofrece mayor resistencia y disponibilidad que un disco físico. Con los discos administrados, lo único que debe hacer es aprovisionar el disco; Azure se encargará del resto. 
 
 4. **[Azure table storage:](https://azure.microsoft.com/en-us/products/storage/tables/)**
+
+Se utiliza para almacenar petabytes de datos semiestructurados. Table Storage le permite escalar sin tener que fragmentar manualmente su conjunto de datos.
+El almacenamiento con redundancia geográfica permite que los datos almacenados se repliquen tres veces dentro de una región y tres veces más en otra región, a cientos de kilómetros de distancia.
+
+
 5. **[Azure queue storage:](https://azure.microsoft.com/es-es/products/storage/queues/)**
- Es un servicio de almacenamiento para  mensajería  
+ Es un servicio de almacenamiento para  mensajería. 
+Sirve para crear aplicaciones con funciones separadas y reparta las cargas de trabajo.
+
+
 6. **[Azure data lake:](https://azure.microsoft.com/es-mx/products/data-lake-analytics/)**
 
-- ### Niveles de almacenamiento
+
+Es un servicio que facilita a los desarrolladores, los científicos de los datos y los analistas el almacenamiento de datos de cualquier tamaño, forma y velocidad, y para llevar a cabo todo tipo de procesamiento y análisis en diferentes plataformas y lenguajes. Azure Data Lake funciona con inversiones de TI para identidad, gobernanza y seguridad, consiguiendo una gobernanza y gestión de datos simplificadas. 
+
+[### Ejercicio de creación de un blob de almacenamiento](https://learn.microsoft.com/es-mx/training/modules/describe-azure-storage-services/5-exercise-create-storage-blob)
 
 - ### Opciones de redundancia
 #### Describir la redundancia de almacenamiento de Azure 
@@ -218,8 +236,6 @@ Los datos con una GZRS se almacenan en tres zonas de disponibilidad en la regió
 
 - **Accesible** Es posible acceder a los datos de Azure Storage desde cualquier parte del mundo a través de HTTP o HTTPS. Microsoft proporciona bibliotecas cliente para Azure Storage en diversos lenguajes, incluidos .NET, Java, Node.js, Python, PHP, Ruby, Go y otros, así como una API REST consolidada. Azure Storage admite la escritura en Azure PowerShell o la CLI de Azure. Y Azure Portal y el Explorador de Azure Storage ofrecen soluciones visuales sencillas para trabajar con los datos. 
 
-- ### Movimientos de archivos
-
 - ### Migración
 
 ### Azure Migrate 
@@ -232,7 +248,6 @@ Es un servicio que migra datos desde el entorno local a la nube.
 
         - Assessment and migration (Evaluación y migración): en el centro de Azure Migrate, puede evaluar y migrar la infraestructura local a Azure. 
 
-
 ### HERRAMIENTAS PARA LA MIGRACIÓN DE DATOS: 
 
 - **Azure Migrate:** Discovery and assessment (Azure Migrate: detección y evaluación). Detecte y evalúe servidores locales que se ejecutan en VMware, Hyper-V y servidores físicos para preparar la migración a Azure. 
@@ -240,6 +255,7 @@ Es un servicio que migra datos desde el entorno local a la nube.
 - **Web app migration assistant (Asistente de migración de aplicación web).** Azure App Service Migration Assistant es una herramienta independiente para evaluar sitios web locales para la migración a Azure App Service. Use Migration Assistant para migrar aplicaciones web de .NET y PHP a Azure. 
 
 - **Azure Data Box.** Use los productos de Azure Data Box para trasladar grandes cantidades de datos sin conexión a Azure. 
+
 
 ## 4. Identidad, acceso y seguridad de Azure
 
