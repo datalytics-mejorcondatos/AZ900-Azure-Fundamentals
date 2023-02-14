@@ -207,11 +207,45 @@ Los datos con una GZRS se almacenan en tres zonas de disponibilidad en la regió
 
 ### Azure Storage y sus servicios
 
+### Ventajas 
 
+- **Duradero y altamente disponible** La redundancia garantiza que los datos estén seguros en caso de producirse errores de hardware transitorios. También puede optar por replicar datos entre centros de datos o regiones geográficas para obtener protección adicional frente a catástrofes locales o desastres naturales. Los datos replicados de esta manera permanecen con una alta disponibilidad en caso de que se produzca una interrupción inesperada. 
+
+- **Seguro** Todos los datos escritos en una cuenta de Azure Storage se cifran mediante el servicio. Azure Storage proporciona un control pormenorizado sobre quién tiene acceso a los datos. 
+
+- **Escalable** Azure Storage está diseñado para poderse escalar de forma masiva para satisfacer las necesidades de rendimiento y almacenamiento de datos de las aplicaciones de hoy en día. 
+
+- **Administrado** Azure controla automáticamente el mantenimiento, las actualizaciones y los problemas críticos del hardware. 
+
+- **Accesible** Es posible acceder a los datos de Azure Storage desde cualquier parte del mundo a través de HTTP o HTTPS. Microsoft proporciona bibliotecas cliente para Azure Storage en diversos lenguajes, incluidos .NET, Java, Node.js, Python, PHP, Ruby, Go y otros, así como una API REST consolidada. Azure Storage admite la escritura en Azure PowerShell o la CLI de Azure. Y Azure Portal y el Explorador de Azure Storage ofrecen soluciones visuales sencillas para trabajar con los datos. 
 
 - ### Movimientos de archivos
 
 - ### Migración
+
+### Azure Migrate 
+
+Es un servicio que migra datos desde el entorno local a la nube. 
+
+        - **Plataforma de migración unificada:** un único portal para iniciar, ejecutar y realizar un seguimiento de la migración a Azure. 
+
+        - **Rango de herramientas:** Rango de herramientas para la evaluación y migración Las herramientas de Azure Migrate incluyen Azure Migrate: Discovery y assessment y Azure Migrate: Server Migration. Azure Migrate también se integra con otros servicios y herramientas de Azure, así como con ofertas de proveedores de software independientes (ISV). 
+        - **Assessment and migration (Evaluación y migración):** en el centro de Azure Migrate, puede evaluar y migrar la infraestructura local a Azure. 
+
+
+### HERRAMIENTAS PARA LA MIGRACIÓN DE DATOS: 
+
+    - **Azure Migrate:** Discovery and assessment (Azure Migrate: detección y evaluación). Detecte y evalúe servidores locales que se ejecutan en VMware, Hyper-V y servidores físicos para preparar la migración a Azure. 
+
+    - **Azure Migrate:** Server Migration (Azure Migrate: migración del servidor). Migre máquinas virtuales de VMware, máquinas virtuales de Hyper-V, servidores físicos, otros servidores virtualizados y máquinas virtuales de la nube pública a Azure. 
+
+    - **Data Migration Assistant.** Data Migration Assistant es una herramienta independiente para evaluar servidores de SQL Server. Ayuda a identificar posibles problemas que bloquean la migración. Identifica características no admitidas, nuevas características que puede aprovechar después de la migración y la ruta de acceso correcta para la migración de la base de datos. 
+
+    - **Azure Database Migration Service.** Migre bases de datos locales a máquinas virtuales de Azure en las que se ejecutan SQL Server, Azure SQL Database o instancias administradas de SQL. 
+
+    - **Web app migration assistant (Asistente de migración de aplicación web).** Azure App Service Migration Assistant es una herramienta independiente para evaluar sitios web locales para la migración a Azure App Service. Use Migration Assistant para migrar aplicaciones web de .NET y PHP a Azure. 
+
+    - **Azure Data Box.** Use los productos de Azure Data Box para trasladar grandes cantidades de datos sin conexión a Azure. 
 
 ## 4. Identidad, acceso y seguridad de Azure
 
