@@ -4,9 +4,8 @@ import numpy as np
 def limpieza_datos_retabilidades(resultados_fondos):
 
     """
+    Esta función crea un dataframe con la información de los fondos de inversión como salida. Extrae los diccionarios de rentabilidades por días y años para luego posicionarlos en columnas nuevas.
     
-    que hace funciones
-
     Parameters:
 
         resultados_fondos: pandas.DataFrame: Los resultados de los fondos de inversion de bancolombia.
