@@ -33,7 +33,7 @@ Azure Marketplace le permite comprar soluciones basadas en Azure de proveedores 
 
 Azure cuenta con dos tipos de calculadoras con propósitos distintos donde se puede hacer una estimación de precios por uso:
 
-- [**Calculadora de precios**](https://azure.microsoft.com/es-mx/pricing/calculator/): Esta calculadora está diseñada para dar un costo estimado en el aprovisionamiento de recursos en la nube. Se pueden hacer cálculos de recursos individuales incluyendo el proceso, almacenamiento, redundancia y mnivel de acceso, u otros escenarios de acuerdo con las necesidades personales o de la empresa.
+- [**Calculadora de precios**](https://azure.microsoft.com/es-mx/pricing/calculator/): Esta calculadora está diseñada para dar un costo estimado en el aprovisionamiento de recursos en la nube. Se pueden hacer cálculos de recursos individuales incluyendo el proceso, almacenamiento, redundancia y nivel de acceso, u otros escenarios de acuerdo con las necesidades personales o de la empresa.
 
 - [**Calculadora de TCO**](https://azure.microsoft.com/es-mx/pricing/tco/calculator/): Esta calculadora, por otro lado, está diseñada para comparar los costos de ejecución de una infraestructura local y una infraestructura en la nube, incluye costos de mano de obra de TI, energía, etc., para ver  qué precios maneja Azure. 
 
@@ -340,7 +340,7 @@ Por otro lado, Azure Resourse Manager permite administrar los recursos de tal fo
 ## 4. Herramientas de supervición en Azure
 - ### Azure Advisor 
 
-Azure Advisor revalúa los recursos de Azure y trata de mejorar la confiabilidad, la seguridad y el rendimiento, lograr la excelencia operativa y reducir los costos en os recursos. Esto es posible ua que la idea es optimizar la nube ahorrandole tiempo al usuario. 
+Azure Advisor revalúa los recursos de Azure y trata de mejorar la confiabilidad, la seguridad y el rendimiento, lograr la excelencia operativa y reducir los costos en os recursos. Esto es posible ya que la idea es optimizar la nube ahorrandole tiempo al usuario. 
 
 - ### Azure Service Health 
 
