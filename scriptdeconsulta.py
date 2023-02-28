@@ -1,6 +1,5 @@
-from analisisrentabilidades.limpieza import limpieza_datos_retabilidades
-from analisisrentabilidades.consultanit import consultanit
-from analisisrentabilidades.infofondos import result_rentabilidades
+from analisisrentabilidades.procesamiento import limpieza_datos_retabilidades
+from analisisrentabilidades.consultas import consultanit, result_rentabilidades
 
 Lista_fondos = "https://fiduciaria.grupobancolombia.com/consultarFondosInversion/rest/servicio/consultarListaFondos"
 url_base =  "https://fiduciaria.grupobancolombia.com/consultarFondosInversion/rest/servicio/buscarInformacionFondo/"
