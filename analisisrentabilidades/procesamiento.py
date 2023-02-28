@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+import os
 
 def limpieza_datos_retabilidades(resultados_fondos):
     """
@@ -45,5 +45,20 @@ def limpieza_datos_retabilidades(resultados_fondos):
     
     return rentabilidades_fondos_clean
 
-def act_df_rentabilidades(ruta_lectura):
-    pass
+def act_df_rentabilidades(ruta_lectura,df_renta):
+
+    df_renta = df_renta.query("~fechaCierre.isna()").copy()
+    df_renta["fechaCierre"] = pd.to_datetime(df_renta["fechaCierre"].astype(int), format = "%Y%m%d")
+    df_renta["fechaCierre"] = df_renta["fechaCierre"].dt.strftime("%Y-%m-%d")
+
+    if os.path.exists(ruta_lectura):
+
+        version1_df = pd.read_csv(ruta_lectura)
+        print(version1_df.shape[0])
+        full_df_renta = pd.concat([version1_df,df_renta],axis=0)
+        
+        full_df_renta.drop_duplicates(subset=["nit","fechaCierre"], inplace = True)
+        print(full_df_renta.shape[0])
+        return full_df_renta
+    else:        
+        return df_renta
