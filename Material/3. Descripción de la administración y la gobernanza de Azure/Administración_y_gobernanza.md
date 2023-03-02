@@ -294,8 +294,6 @@ Ingrese [aquí](https://learn.microsoft.com/es-mx/training/modules/describe-feat
 
 Este portal proporciona contenido, herramientas y demás recursos sobre prácticas de seguirad, privacidad y cumplimiento de Microsoft. Este portal tiene detalles acerca de la implementación de controles y procesos de Microsoft que protegen los servicios en la nube.
 
-¿Qupe c
-
 ## 3. Características y herramientas para la gestión y despliegue de recursos Azure
 
 - ### Portal de Azure
