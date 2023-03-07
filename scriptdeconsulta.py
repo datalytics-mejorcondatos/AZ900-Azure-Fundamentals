@@ -1,10 +1,8 @@
-from analisisrentabilidades.procesamiento import limpieza_datos_retabilidades, act_df_rentabilidades
+from analisisrentabilidades.procesamiento import limpieza_datos_retabilidades, act_df_rentabilidades, escribir_resultados
 from analisisrentabilidades.consultas import consultanit, result_rentabilidades
 
 Lista_fondos = "https://www.bancolombia.com/consultarFondosInversion/rest/servicio/consultarListaFondos"
 url_base =  "https://www.bancolombia.com/consultarFondosInversion/rest/servicio/buscarInformacionFondo/"
-
-
 
 if __name__ == "__main__": 
      print("Inicio de consulta Nits")
@@ -17,4 +15,4 @@ if __name__ == "__main__":
      print("Actualización de archivo histórico")
      act_df_rent = act_df_rentabilidades(ruta,DFfondos)
      print("Escritura de resultados")
-     act_df_rent.to_csv(ruta, index=False)
+     escribir_resultados(ruta, act_df_rent)
