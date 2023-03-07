@@ -140,9 +140,9 @@ Niveles de acceso de almacenamiento de blobs:
  - Nivel de acceso de archivo: conveniente para datos a los que raramente se accede y que se almacenan durante al menos 180 días con requisitos de latencia flexibles (por ejemplo, copias de seguridad a largo plazo). 
 
 2. **[Azure file storage:](https://azure.microsoft.com/en-us/products/storage/files/)**
+
 Recursos compartidos de archivos administrados mediante implementaciones locales y en la nube.  
 **[¿Qué es un recurso compartido?](https://learn.microsoft.com/es-es/azure/architecture/hybrid/azure-file-share)**
-
 ### Usos
 
 - Reemplazar o complementar servidores de archivos locales
@@ -151,6 +151,7 @@ Recursos compartidos de archivos administrados mediante implementaciones locales
 - Los recursos compartidos de archivos de Azure se pueden usar como volúmenes persistentes para contenedores con estado.
 
 3. **[Azure disk storage:](https://azure.microsoft.com/en-us/products/storage/disks/)**
+
 volúmenes de almacenamiento en el nivel de bloque para máquinas virtuales de Azure.  
 Conceptualmente, son iguales que un disco físico, pero están virtualizados, lo que ofrece mayor resistencia y disponibilidad que un disco físico. Con los discos administrados, lo único que debe hacer es aprovisionar el disco; Azure se encargará del resto. 
 
@@ -161,23 +162,22 @@ El almacenamiento con redundancia geográfica permite que los datos almacenados 
 
 
 5. **[Azure queue storage:](https://azure.microsoft.com/es-es/products/storage/queues/)**
- Es un servicio de almacenamiento para  mensajería. 
+
+Es un servicio de almacenamiento para  mensajería. 
 Sirve para crear aplicaciones con funciones separadas y reparta las cargas de trabajo.
 
 
 6. **[Azure data lake:](https://azure.microsoft.com/es-mx/products/data-lake-analytics/)**
 
-
 Es un servicio que facilita a los desarrolladores, los científicos de los datos y los analistas el almacenamiento de datos de cualquier tamaño, forma y velocidad, y para llevar a cabo todo tipo de procesamiento y análisis en diferentes plataformas y lenguajes. Azure Data Lake funciona con inversiones de TI para identidad, gobernanza y seguridad, consiguiendo una gobernanza y gestión de datos simplificadas. 
 
-[### Ejercicio de creación de un blob de almacenamiento](https://learn.microsoft.com/es-mx/training/modules/describe-azure-storage-services/5-exercise-create-storage-blob)
+### [Ejercicio de creación de un blob de almacenamiento](https://learn.microsoft.com/es-mx/training/modules/describe-azure-storage-services/5-exercise-create-storage-blob)
 
 - ### Opciones de redundancia
 #### Describir la redundancia de almacenamiento de Azure 
 
 La redundancia garantiza que la cuenta de almacenamiento cumple sus objetivos de disponibilidad  y durabilidad, aunque se produzcan errores. 
  
-
 Factores a tener en cuenta para elegir la opción de redundancia más adecuada:  
 
     - Bajo costo 
@@ -237,7 +237,7 @@ Los datos con una GZRS se almacenan en tres zonas de disponibilidad en la regió
 
 - ### Migración
 
-### Azure Migrate 
+#### Azure Migrate 
 
 Es un servicio que migra datos desde el entorno local a la nube. 
 
@@ -257,21 +257,89 @@ Es un servicio que migra datos desde el entorno local a la nube.
 
 
 ## 4. Identidad, acceso y seguridad de Azure
-
 - ### Servicios de directorio de Azure
-
+ 
 #### Azure Active Directory (Azure AD)
+
+Es un directorio donde es posible acceder a las aplicaciones en la nube de Microsoft o a otra nube. 
+Cuando usamor Active Directory ejecutado en Windows Server, es posible tener un servicio de administración de acceso a los servicios que ha adquirido la empresa. Es posible controlar las cuentas de identidad que se tienen para acceder globalmente a la nube.
+
+Los usuarios de Azure Active Directory son:
+- Administradores de TI
+- Desarrolladores de aplicaciones
+- Usuarios
+- Suscriptores de servicios en línea
+
+Cada uno de los usuarios anteriormente mencionados tienen diferentes funciones que les permite tener Azure AD de acuerdo con sus necesidades.
+
+Es importante recalcar que Azure Active Directory brinda servicios de autenticación, es decir, comprobar la identidad al ingresar a alguna aplicación o recurso. También se tiene un inicio de sesión único (SSO) donde basta con tener un solo usuario y contraseña para hacer uso de estos recursos.  Por otro lado, administrar las aplicaciones tanto en la nube como las locales es una ventaja que tiene Azure AD. Por último y no menos importante, la posibilidad de registrar dispositivos y administrarlos es otra forma de acceso a los recursos.
 
 #### Azure Active Directory Domain Services (Azure AD DS)
 
+Este es un servicio que brinda servicios de dominio administrados sin tener que mantener una infraestructura que lo admita. Algunos de los servicios son los siguientes:
+- Unión a un dominio
+- Directivas de grupo
+- Protocolo ligero de acceso a directorios (LDAP) 
+- Autenticación de Kerberos/NTLM
 
+Azure AD DS se integra con Azure AD  con el fin de que los usuarios inicien sesión en lso servicios y las aplicaciones conectados al dominio. 
+Esto proporciona una migración mediante [lift-and-shift](https://learn.microsoft.com/es-es/dotnet/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-azure-iaas) de los recursos locales de azure.
 - ### Métodos de autenticación
+
+Cuando hablamos de autenticación, básicamente nos referimos a demostrar quien dice ser que es. Existen distintos métodos de autenticación:
+
+- **Inicio de sesión único**: 
+
+Este método de autenticación permite a los usuarios iniciar sesión una vez y utilizar credenciales para acceder a los recursos. Es importante tener en cuenta que este método de autenticación empieza a funcionar cuando las aplicaciones confíen en un identificador inicial. 
+
+Usar el inicio de sesión único en las cuentas permite a los usuarios administrar su identidad y al equipo de TI gestionar los usuarios con mayor facilidad.
+
+
+- **Autenticación multifactor - MFA**
+
+Este tipo de autenticación consiste en solicitar a un usuario, una forma adicional (factor) de comprobar la identificación en el momento de iniciar sesión. Esta autenticaciónpermite proteger la cuenta en situaciones en las cuales la contraseña por sí sola estuvo en riesgo.
+
+La autenticación multifactor proporciona seguridad adicional a las identidades, ya que se requieren dos o más elementos para una autenticación completa. Estos elementos se dividen en tres categorías:
+
+        - Algo que el usuario sabe: puede ser una pregunta de seguridad.
+        - Algo que el usuario tiene: se puede tratar de un código que se envía al teléfono móvil del usuario.
+        - Algo que el usuario es: normalmente, algún tipo de propiedad biométrica, como la huella dactilar o el escaneo facial.
+
+
+- **Azure AD Multi-factor Authentication**
+
+Este método es un servicio propio de Microsoft en donde se aplica la lógica de autenticación multifactor y permite elegir la forma adicional de inicio de sesión, como por ejemplo una llamada de teléfono o una notificación de aplicación móvil.
+
+- **Autenticación sin contraseña**
+
+Este método es muy cómo dado que la contraseña se reemplaza por algo que se es o algo que se sabe. En la autenticación sin contraseña hay que configurar su cuenta con un dispositivo que esté asociado. Ahora que se conoce el dispositivo, una vez que proporcione algo que sepa o sea (por ejemplo, un PIN o una huella digital), se podrá autenticar sin usar una contraseña.
 
 - ### Identidades externas y acceso de invitados
 
+Una identidad externa es una persona, un dispositivo, un servicio, etc. que está fuera de la organización. Azure AD External Identities hace referencia a todas las formas en que puede interactuar de forma segura con usuarios externos a su organización. Si quiere colaborar con asociados, distribuidores o proveedores, puede compartir los recursos y definir cómo los usuarios internos pueden acceder a organizaciones externas. Si es un desarrollador que crea aplicaciones orientadas al consumidor, puede administrar las experiencias de identidad de los clientes.
+
 - ### Acceso condicional
 
+Esta herramienta permite acceso a distintos recursos en función de señales de identidad. Este tipo de autenticación puede solicitarle a un usuario un segundo factor si este no e encuentra en una ubicación conocida. 
+
+Esta herramienta toma desiciones basadas en señales del usuario que son recopiladas con el fin de de permitir o denegar accesos. 
+Estas decisiones se pueden ver en el siguiente diagrama:
+
+![f](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/f.png)
+
+En función de estas señales, la decisión puede ser permitir el acceso completo si el usuario inicia sesión desde su ubicación habitual. Si el usuario inicia sesión desde una ubicación inusual o una ubicación marcada como de alto riesgo, el acceso puede bloquearse por completo, o bien podría concederse después de que el usuario proporcione una segunda forma de autenticación.
 - ### Control de acceso
+
+Azure permite controlar el acceso a ciertos recursos o funciones de distintos usuarios con el control basado en roles de Azure (RBAC de Azure). 
+
+Azure brinda roles integrados que especifica los requisitos de acceso comunes de los recursos de la nube de acuerdo con las necesidades de la empresa. 
+
+A continuación se tiene un diagrama que especifica los roles y los ámbitos en los cuales se van concediendo permisos manteniendo el control de acceso de los usuarios. 
+
+![g](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/g.png)
+
+
+En función de estas señales, la decisión puede ser permitir el acceso completo si el usuario inicia sesión desde su ubicación habitual. Si el usuario inicia sesión desde una ubicación inusual o una ubicación marcada como de alto riesgo, el acceso puede bloquearse por completo, o bien podría concederse después de que el usuario proporcione una segunda forma de autenticación.
 
 - ### Confianza sero
 
@@ -286,8 +354,26 @@ Usar el acceso de privilegios mínimos: limite el acceso de los usuarios con Jus
 Asumir que hay brechas: minimice el radio de expansión y el acceso a los segmentos. Comprobación del cifrado de un extremo a otro. Utilice el análisis para obtener visibilidad, impulsar la detección de amenazas y mejorar las defensas.
 
 
-
 - ### Modelo de defensa en profundidad
+
+La defensa en profundiad tiene como objetivo principal la protección de la información para que no accedan personas no autorizadas a los distintos recursos. 
+
+Azure tiene implementados distintos mecanismos con el fin de ralentizar un posible ataque con el fin de sustraer información que está altamente protegida.
+
+Para facilidad del lector se tiene el siguiente diagrama que esquematiza de forma sencilla la protección a la información en distintas capas.
+
+![h](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/h.png)
+
+Para poder entender mejor este [modelo de defensa en profundidad](https://learn.microsoft.com/es-mx/training/modules/describe-azure-identity-access-security/8-describe-defense-depth) es necesario hacer una lectura más detallada.
 
 - ### Microsoft Defender for Cloud
 
+Esta herramienta sirve para supervisar la administración de la seguridad y la protección contra amenazas que se tiene, supervisando la nube, los entornos locales, los entornos híbridos y la multinube con el propósito de mandar instrucciones y proporcionar notificaciones que garanticen la posición de seguridad.
+
+En dado caso que se cuente con un centro de datos local o incluso en la nube, Defender for Cloud puede implementar un agente de Log Analytics para recopilar datos relacionados con la seguridad de estos centros de datos.
+
+Defender for Cloud le permite detectar amenazas en:
+
+- **Servicios de PaaS de Azure:** puede detectar amenazas dirigidas a servicios de Azure como Azure App Service, Azure SQL, la cuenta de Azure Storage y otros servicios de datos. También puede realizar la detección de anomalías en los registros de actividad de Azure mediante la integración nativa con Microsoft Defender para aplicaciones en la nube (anteriormente conocido como Microsoft Cloud App Security).
+- **Servicios de datos de Azure:** Defender for Cloud incluye capacidades que le ayudarán a clasificar automáticamente los datos en Azure SQL. También puede obtener evaluaciones de las posibles vulnerabilidades en los servicios de Azure SQL y Azure Storage, además de recomendaciones sobre cómo mitigarlas.
+- **Redes:** Defender for Cloud le permite limitar la exposición a los ataques por fuerza bruta. Si reduce el acceso a los puertos de las máquinas virtuales mediante el acceso de máquina virtual Just-In-Time, puede proteger la red al prevenir el acceso innecesario. Puede establecer directivas de acceso seguro en los puertos seleccionados, solo para usuarios autorizados, direcciones IP o intervalos de direcciones IP de origen permitidos y durante un período limitado.
