@@ -1,5 +1,7 @@
 import pandas as pd
 import os
+import csv
+import datetime
 
 def limpieza_datos_retabilidades(resultados_fondos):
     """
@@ -62,3 +64,15 @@ def act_df_rentabilidades(ruta_lectura,df_renta):
         return full_df_renta
     else:        
         return df_renta
+    
+def escribir_resultados(ruta, act_df_rent):
+    act_df_rent.to_csv(ruta, index=False)
+    fecha_actual = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')  
+    with open(ruta, "r") as archivo:
+        lineas_antes = len(list(csv.reader(archivo)))
+    with open(ruta, "r") as archivo:
+        lineas_despues = len(list(csv.reader(archivo)))
+    lineas_nuevas = lineas_despues - lineas_antes
+    with open('log_ejecuciones.csv', 'a', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow([fecha_actual, lineas_nuevas])
