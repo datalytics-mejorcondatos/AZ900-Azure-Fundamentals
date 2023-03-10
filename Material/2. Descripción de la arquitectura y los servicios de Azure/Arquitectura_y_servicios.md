@@ -4,7 +4,7 @@
 Una región es un área geográfica donde Azure, o en general un proveedor de servicios en la nube tiene al menos un centro de datos físico.
 A continuación, los puntos azules son los centros de datos físicos con los que cuenta Azure al rededor del mundo.
 
-![6](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/6.png)
+![6](../Imagenes/6.png)
 
 Gracias a estos centros de datos distribuidos estratégicamente, se garantiza que los servicios de Azure de una región ofrezcan el mejor rendimiento y seguridad.
 Aunque algunos servicios de las máquinas virtuales solo están disponibles en determinadas regiones, como tipos de almacenamiento o tamaños de maquinas virtuales específicos. También hay algunos servicios globales de Azure que no requieren que seleccione una región concreta.
@@ -15,7 +15,7 @@ Si quieres tener una exploración de estas regiones puedes ingresar a la página
 
  Las zonas de disponibilidad son centros de datos separados físicamente dentro de una región de Azure. Las zonas de disponibilidad están conectadas a través de redes de fibra óptica de alta velocidad privadas como se muestra en la figura:
  
- ![7](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/7.png)
+ ![7](../Imagenes/7.png)
 
 Estas zonas de disponibilidad tienen un propósito y es proteger la información que un centro de datos tiene en caso de un desastre natural que afecte una zona, respaldando y haciendo una copia en otra zona de disponibilidad.
 También hay otros tipos de usos entre zonas de disponibilidad como darle mayor rendimiento a un recurso. 
@@ -35,7 +35,7 @@ Una región se empareja con otra de la misma zona geográfica (debe estar a mín
 
 - ###  Recursos y grupos de recursos
 
-![8](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/8.png)
+![8](../Imagenes/8.png)
 
 #### Características 
 * **Alta disponibilidad:** Los servicios de nube están habilitados independientemente de si ocurre un evento que ponga en peligro una región de Azure. 
@@ -44,7 +44,7 @@ Una región se empareja con otra de la misma zona geográfica (debe estar a mín
 * *[Elasticidad:](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-elastic-computing/)* Un recurso se autoescala para cubrir las necesidades que se presenten. Esta característica se produce de forma automática. 
 
 - ### Suscripciones
-![9](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/9.png)
+![9](../Imagenes/9.png)
 
 
 Las suscripciones en Azure funcionan para organizar los recursos y grupos de recursos con el fin de tener un control organizado de la facturación. Existen varias modalidades de suscripciones que implican tener una autenticación y autorización para el uso de recursos. 
@@ -61,7 +61,7 @@ Una cuenta puede tener varias suscripciones.
 - ### Jerarquías 
 La jerarquía es una forma flexible de organizar los recursos de acuerdo con el tipo de suscripción que hay entre los usuarios de una empresa que adquiere productos del cómputo en la nube. Un ejemplo es el siguiente diagrama:
 
-![10](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/10.png)
+![10](../Imagenes/10.png)
 
 ## 2. Servicios informáticos y de red de Azure
 
@@ -74,7 +74,7 @@ Su tiempo de ejecución es de pocos segundos y es posible que yo pueda utilizar 
 **Máquinas virtuales:** Este tipo de recursos le permiten a un usuario o empresa, implementar aplicaciones y programas informáticos en un sistema operativo virtualizado ya que la máquina virtual funciona como un computador en la nube.
 ### Servicios de cómputo bajo demanda donde podemos encontrar por ejemplo los siguientes: 
 
-![a](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/a.png)
+![a](../Imagenes/a.png)
 
 Los servicios del ejemplo son Infraestructuras como Servicios (IaaS) o Plataformas como Servicios (PaaS). 
 
@@ -97,7 +97,7 @@ Todos los servicios que ofrece Azure respecto a las redes virtuales son Infraest
 
 A continuación presentaremos algunos ejemplos dentro de estos recursos:
 
-![b](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/b.png)
+![b](../Imagenes/b.png)
 
 - *Azure virtual networks:* Permiten que los recursos de Azure se comuniquen entre sí.
 - *Azure VPN Gateway:* Es una red privada virtual que mantiene la seguridad de la información almacenada en los recursos de Azure.
@@ -120,7 +120,7 @@ Las redes virtuales de Azure admiten puntos de conexión públicos y privados pa
 
 Los servicios de almacenamiento guardan objetos.
 
-![c](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/c.png)
+![c](../Imagenes/c.png)
  
 
 1. **[Azure blob storage:](https://azure.microsoft.com/en-us/products/storage/blobs/)** 
@@ -210,7 +210,7 @@ Opciones para replicar datos en esta región son:
 
 #### Almacenamiento con redundancia geográfica (GRS)
 
-![d](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/d.png)
+![d](../Imagenes/d.png)
 
 El almacenamiento con redundancia geográfica (GRS) copia los datos tres veces en una ubicación física de la región primaria a través de almacenamiento con redundancia local y luego copia los datos a una región secundaria por el mismo tipo de almacenamiento.  
 
@@ -218,7 +218,7 @@ El almacenamiento con redundancia geográfica (GRS) copia los datos tres veces e
 
 Los datos con una GZRS se almacenan en tres zonas de disponibilidad en la región primaria y luego se replican en una región geográfica secundaria para protegerlos de desastres regionales. 
 
-![e](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/e.png)
+![e](../Imagenes/e.png)
 - ### Cuenta de almacenamiento y tipos de almacenamiento
 
 ### Azure Storage y sus servicios
@@ -325,7 +325,7 @@ Esta herramienta permite acceso a distintos recursos en función de señales de 
 Esta herramienta toma desiciones basadas en señales del usuario que son recopiladas con el fin de de permitir o denegar accesos. 
 Estas decisiones se pueden ver en el siguiente diagrama:
 
-![f](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/f.png)
+![f](../Imagenes/f.png)
 
 En función de estas señales, la decisión puede ser permitir el acceso completo si el usuario inicia sesión desde su ubicación habitual. Si el usuario inicia sesión desde una ubicación inusual o una ubicación marcada como de alto riesgo, el acceso puede bloquearse por completo, o bien podría concederse después de que el usuario proporcione una segunda forma de autenticación.
 - ### Control de acceso
@@ -336,7 +336,7 @@ Azure brinda roles integrados que especifica los requisitos de acceso comunes de
 
 A continuación se tiene un diagrama que especifica los roles y los ámbitos en los cuales se van concediendo permisos manteniendo el control de acceso de los usuarios. 
 
-![g](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/g.png)
+![g](../Imagenes/g.png)
 
 
 En función de estas señales, la decisión puede ser permitir el acceso completo si el usuario inicia sesión desde su ubicación habitual. Si el usuario inicia sesión desde una ubicación inusual o una ubicación marcada como de alto riesgo, el acceso puede bloquearse por completo, o bien podría concederse después de que el usuario proporcione una segunda forma de autenticación.
@@ -362,7 +362,7 @@ Azure tiene implementados distintos mecanismos con el fin de ralentizar un posib
 
 Para facilidad del lector se tiene el siguiente diagrama que esquematiza de forma sencilla la protección a la información en distintas capas.
 
-![h](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/h.png)
+![h](../Imagenes/h.png)
 
 Para poder entender mejor este [modelo de defensa en profundidad](https://learn.microsoft.com/es-mx/training/modules/describe-azure-identity-access-security/8-describe-defense-depth) es necesario hacer una lectura más detallada.
 
