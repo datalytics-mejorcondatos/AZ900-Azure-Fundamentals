@@ -8,9 +8,9 @@ Esta certificación está enfocada en el dominio de los conceptos básicos de la
 
 - [Material](./Material)
   1. [Conceptos](./Material/1.%20Descripción%20de%20los%20conceptos%20de%20nube)
-        - [Descripción de los conceptos básicos en la nube](./Material/1.%20Descripci%C3%B3n%20de%20los%20conceptos%20de%20nube/README.md)
+        - [Descripción de los conceptos básicos en la nube](./Material/1.%20Descripci%C3%B3n%20de%20los%20conceptos%20de%20nube/Conceptos_basicos.md)
   2. [Arquitectura y servicios](./Material/2.%20Descripci%C3%B3n%20de%20la%20arquitectura%20y%20los%20servicios%20de%20Azure)
-        - [Descripción de la Arquitectura y servicios de Azure](./Material/2.%20Descripci%C3%B3n%20de%20la%20arquitectura%20y%20los%20servicios%20de%20Azure/README.md)
+        - [Descripción de la Arquitectura y servicios de Azure](./Material/2.%20Descripci%C3%B3n%20de%20la%20arquitectura%20y%20los%20servicios%20de%20Azure/Arquitectura_y_servicios.md)
   3. [Administración y Gobernanza](./Material/3.%20Descripci%C3%B3n%20de%20la%20administraci%C3%B3n%20y%20la%20gobernanza%20de%20Azure/)
         - [Descripción y conceptos de la Administración y Gobernanza de Azure](./Material/3.%20Descripci%C3%B3n%20de%20la%20administraci%C3%B3n%20y%20la%20gobernanza%20de%20Azure/Administraci%C3%B3n_y_gobernanza.md)
   - [Descripción de otros recursos](./Material/Descripci%C3%B3n%20otros%20recursos/README.md)
@@ -36,6 +36,6 @@ Y los archivos que encuentra en la vista principal son el script que ejecuta el 
 
 Herramientas con las que se construyó el proyecto: 
 
-- Python
+- Python: versión 3.9.13
 - Git/GitHub
 - Azure Virtual Machines
