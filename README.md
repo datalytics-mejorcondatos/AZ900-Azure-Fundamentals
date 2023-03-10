@@ -7,15 +7,15 @@ Esta certificación está enfocada en el dominio de los conceptos básicos de la
 ## Contenido
 
 - [Material](./Material)
-  1. [Conceptos](./Material/1.%20Descripción)
-        - [Descripción de los conceptos básicos en la nube](./Material/1.%20Descripción/descripcionenlanube.md)
-  2. [Arquitectura y servicios](./Material/2.%20Arquitectura)
-        - [Descripción de la Arquitectura y servicios de Azure](./Material/1.%20Descripción/otroarchivo.md)
-  3. [Administración y Gobernanza](./Material/3.%20Administración)
-        - [Descripción y conceptos de la Administración y Gobernanza de Azure](./Material/1.%20Descripción/otroarchivo.md)
-  - [Descripción de otros recursos](./Material/Descripción%20de%20otros%20recursos)
-  - [Exámenes guía](./Material/Examenes%20guía)
-- [Funciones del Análisis de rentabilidades](./analisisrentabilidades) Esta carpeta contiene las funciones empleadas en el proyecto.
+  1. [Conceptos](./Material/1.%20Descripción%20de%20los%20conceptos%20de%20nube)
+        - [Descripción de los conceptos básicos en la nube](./Material/1.%20Descripci%C3%B3n%20de%20los%20conceptos%20de%20nube/README.md)
+  2. [Arquitectura y servicios](./Material/2.%20Descripci%C3%B3n%20de%20la%20arquitectura%20y%20los%20servicios%20de%20Azure)
+        - [Descripción de la Arquitectura y servicios de Azure](./Material/2.%20Descripci%C3%B3n%20de%20la%20arquitectura%20y%20los%20servicios%20de%20Azure/README.md)
+  3. [Administración y Gobernanza](./Material/3.%20Descripci%C3%B3n%20de%20la%20administraci%C3%B3n%20y%20la%20gobernanza%20de%20Azure/)
+        - [Descripción y conceptos de la Administración y Gobernanza de Azure](./Material/3.%20Descripci%C3%B3n%20de%20la%20administraci%C3%B3n%20y%20la%20gobernanza%20de%20Azure/Administraci%C3%B3n_y_gobernanza.md)
+  - [Descripción de otros recursos](./Material/Descripci%C3%B3n%20otros%20recursos/README.md)
+  - [Exámenes guía](./Material/Ex%C3%A1menes%20gu%C3%ADa/)
+- [Funciones del análisis de rentabilidades](./analisisrentabilidades/) Esta carpeta contiene las funciones empleadas en el proyecto.
 
 
 A continuación encontrará un conjunto de recursos distribuidos en carpetas en las cuales hay material especificado por tema para el estudio de la certificación. Además, podrá usar material dispuesto para la preparación del examen.
