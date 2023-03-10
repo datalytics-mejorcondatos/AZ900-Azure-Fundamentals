@@ -3,20 +3,20 @@
 ## 1. Computación en nube
 
 - ### La nube
- ![1](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/1.jpg)
+ ![1](../Imagenes/1.jpg)
 
 Cuando hablamos de la nube como un concepto computacional, la manera más fácil de entender es pensando en esta como el computador de otra persona en el que voy a ejecutar distintas tareas. La ejecución de estas tareas se facilita por medio de servicios que me presta la nube a través de la conexión a internet.  
 
 ¿Qué servicios me puede prestar? Espacio de almacenamientos, uso de CPUs en centros de datos, etc.
 
 ### Centro de datos 
-![2](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/2.png)
+![2](../Imagenes/2.png)
 
 El [centro de datos](https://infrastructuremap.microsoft.com/explore/datacenter) o datacenter es un término que de aquí en adelante será usado frecuentemente para referirse al espacio físico donde se encuentran los recursos necesarios de un proveedor de servicios tales como computadores, redes, sistemas de almacenamiento, etc. 
 
 
 - ### Modelo basado en el consumo
-![3](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/3.jpg)
+![3](../Imagenes/3.jpg)
 
 Antes de hablar del modelo basado en el consumo, es importante aclarar dos conceptos los cuales son:
 
@@ -53,7 +53,7 @@ También existen estas nubes:
 
 En el mundo del cómputo en la nube existen proveedores de servicios y consumidores que fueron explicados anteriormente, además de esto también hay distintos tipos de servicios y en cualquiera de estos tanto el proveedor como el consumidor tienen responsabilidades como las vemos en el siguiente cuadro:
 
-![4](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/4.png)
+![4](../Imagenes/4.png)
 
 En el ambiente **On-Premise** se hace uso de servidores y entorno físico de la empresa, por esto en el cuadro vemos que todas las responsabilidades son de el consumidor en este caso la empresa. 
 
@@ -164,4 +164,4 @@ Aquí se le atribuyen la mayor cantidad de responsabilidades al proveedor:
 
 Para empezar a trabajar con proveedores de servicio en la nube, es importante reconocer los recursos clasificados por tipo de servicio. Aquí un a breve clasificación: 
 
-![5](https://github.com/datalytics-mejorcondatos/AZ900-Azure-Fundamentals/blob/Develop/Material/Imagenes/5.png)
+![5](../Imagenes/5.png)
