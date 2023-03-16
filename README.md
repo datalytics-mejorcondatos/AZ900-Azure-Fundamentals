@@ -32,6 +32,20 @@ En este repositorio también se realiza un proyecto con el fin de fortalecer los
 
 En la carpeta llamada **analisisrentabilidades** se encuentran dos módulos que contienen las funciones creadas para la extracción de la información de los fondos.  
 
+- Consultas: Este módulo contiene una función llamada *consultanit* y lo que hace es consultar los NITs que hay en la página de [Bancolombia](https://www.bancolombia.com/consultarFondosInversion/rest/servicio/consultarListaFondos) y los extrae en una lista.
+
+      Por otro lado se tiene una función llamada *result_rentabilidades* donde toma la lista que se creó en la anterior función para pegar cada valor (NIT) en una URL y así poder consultar la información de cada uno de los fondos. 
+
+- Procesamiento: Este módulo contiene la función *limpieza_datos_retabilidades*. Esta función crea un dataframe con la información de los fondos de inversión como salida. Extrae los diccionarios de rentabilidades por días y años para luego posicionarlos en columnas nuevas.
+
+      También encontramos la función  *act_df_rentabilidades* donde primero, se eliminan los registros cuya fecha de cierre esté vacía y ajusta el formato de esta columna a un formato de fecha. Además concatena al dataframe que ya existe, las filas que se actualizan directamente en la página de Bancolombia a medida que se va ejecutando el script principal.
+
+      Por último tenemos la función *escribir_resultados* que genera un archivo donde se registra la fecha de ejecución del script y las lineas que fueron agregadas.
+
+Los archivos que encuentran en la vista principal son el script que ejecuta el proyecto y los requerimientos que este módulo de python necesita para ser ejecutado.
+
+El módulo *scriptdeconsulta* organiza las funciones mencionadas anteriormente con los pasos necesarios para obtener un dataframe que contenga la información de los fondos de inversión de Bancolombia. 
+
 Y los archivos que encuentra en la vista principal son el script que ejecuta el proyecto y los requerimientos que este módulo de python necesita para ser ejecutado.
 
 Herramientas con las que se construyó el proyecto: 
