@@ -66,10 +66,10 @@ def act_df_rentabilidades(ruta_lectura,df_renta):
         return df_renta
     
 def escribir_resultados(ruta, act_df_rent):
-    act_df_rent.to_csv(ruta, index=False)
     fecha_actual = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')  
     with open(ruta, "r") as archivo:
         lineas_antes = len(list(csv.reader(archivo)))
+    act_df_rent.to_csv(ruta, index=False)
     with open(ruta, "r") as archivo:
         lineas_despues = len(list(csv.reader(archivo)))
     lineas_nuevas = lineas_despues - lineas_antes
