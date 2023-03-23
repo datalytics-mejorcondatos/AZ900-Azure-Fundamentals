@@ -50,6 +50,6 @@ Y los archivos que encuentra en la vista principal son el script que ejecuta el 
 
 Herramientas con las que se construyó el proyecto: 
 
-- Python: versión 3.9.13
+- Python: versión 3.10.6
 - Git/GitHub
 - Azure Virtual Machines
