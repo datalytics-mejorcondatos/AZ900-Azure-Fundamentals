@@ -34,7 +34,7 @@ if __name__ == "__main__":
      ClaseDL.lectura_container(rutalog, CONTAINER_NAME,rutalog)
     
      print("Escritura de resultados")
-     escribir_resultados(ruta, act_df_rent)
+     escribir_resultados(ruta, rutalog, act_df_rent)
      
      ClaseDL.escritura_container(ruta,CONTAINER_NAME,ruta)
     
