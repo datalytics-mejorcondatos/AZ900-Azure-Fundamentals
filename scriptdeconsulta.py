@@ -30,11 +30,12 @@ if __name__ == "__main__":
      print("Actualización de archivo histórico")
      act_df_rent = act_df_rentabilidades(ruta,DFfondos)
     
+     rutalog='log_ejecuciones.csv'
+     ClaseDL.lectura_container(rutalog, CONTAINER_NAME,rutalog)
+    
      print("Escritura de resultados")
      escribir_resultados(ruta, act_df_rent)
      
      ClaseDL.escritura_container(ruta,CONTAINER_NAME,ruta)
-     rutalog='log_ejecuciones.csv'
-
-     ClaseDL.lectura_container(rutalog, CONTAINER_NAME,rutalog)
+    
      ClaseDL.escritura_container(rutalog,CONTAINER_NAME,rutalog)
